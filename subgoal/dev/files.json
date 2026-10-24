@@ -1,0 +1,16 @@
+[
+  {
+    "name": "old.pdf",
+    "title": "Old version (the requirements were derived from this one)",
+    "pdf_url": "https://storage.googleapis.com/certivity-ind-ai-hackathon-regulations-public/subgoal/dev/old.pdf",
+    "sha256": "c0bdbf009ca2818a30bdc12b40b882fd525cb25690b321a335de87fbb2294ae2",
+    "size_bytes": 421411
+  },
+  {
+    "name": "new.pdf",
+    "title": "New version",
+    "pdf_url": "https://storage.googleapis.com/certivity-ind-ai-hackathon-regulations-public/subgoal/dev/new.pdf",
+    "sha256": "063165ac04d3d94f62c4fbbe267073396484daf57b2f2fbf68987886a6bb4e7b",
+    "size_bytes": 428803
+  }
+]
