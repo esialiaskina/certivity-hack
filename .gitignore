@@ -1,0 +1,7 @@
+regulations/pdf/
+data/
+.DS_Store
+.env
+__pycache__/
+.venv/
+__pycache__/
