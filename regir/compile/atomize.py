@@ -21,6 +21,9 @@ Rules:
 Return JSON only: {"atoms":[{"quote":"...","text":"...","role":"...","modality":"shall|shall_not|only_if|may|should"}]}"""
 
 
+ERRORS: list[str] = []
+
+
 def _norm(s: str) -> str:
     s = s.replace("­", "").replace("’", "'").replace("‘", "'").replace("“", '"').replace("”", '"')
     s = re.sub(r"-\s*\n\s*", "", s)           # hyphenated line breaks
@@ -50,7 +53,8 @@ def atomize_node(reg: str, version: str, node, chain: list[str], model=llm.BULK,
         try:
             data = llm.call_json(SYSTEM, user + ("\n\n(Previous reply had a quote that is not verbatim. Copy quotes exactly.)" if attempt else ""),
                                  model=model, fake=fake)
-        except Exception:
+        except Exception as e:
+            ERRORS.append(f"{type(e).__name__}: {str(e)[:300]}")
             continue
         atoms, bad = [], 0
         for i, a in enumerate(data.get("atoms", [])):
@@ -80,6 +84,10 @@ def run(reg: str, limit: int | None = None, model=llm.BULK, fake=None):
     os.makedirs("data/atoms", exist_ok=True)
     with open(f"data/atoms/{key}.jsonl", "w") as f:
         for a in atoms: f.write(json.dumps(a, ensure_ascii=False) + "\n")
+    if ERRORS:
+        from collections import Counter
+        print(f"!! {len(ERRORS)} calls failed. Most common errors:")
+        for e, c in Counter(ERRORS).most_common(3): print(f"   {c}x {e}")
     print(f"{reg}: {len(cand)} candidate nodes -> {len(atoms)} atoms, {bad} ungrounded/invalid dropped -> data/atoms/{key}.jsonl")
     return atoms
 

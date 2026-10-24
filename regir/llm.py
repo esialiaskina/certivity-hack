@@ -10,10 +10,15 @@ CACHE = pathlib.Path("data/llm_cache"); CACHE.mkdir(parents=True, exist_ok=True)
 
 
 def load_env(path=".env"):
+    """.env wins over the ambient shell. An ambient ANTHROPIC_AUTH_TOKEN would make the SDK send a Bearer token
+    and ignore the API key, so it is dropped when .env provides ANTHROPIC_API_KEY."""
     if os.path.exists(path):
         for line in open(path):
-            if "=" in line and not line.strip().startswith("#"):
-                k, v = line.strip().split("=", 1); os.environ.setdefault(k, v.strip().strip('"').strip("'"))
+            line = line.strip()
+            if "=" in line and not line.startswith("#"):
+                k, v = line.split("=", 1); os.environ[k.strip()] = v.strip().strip('"').strip("'")
+        if os.environ.get("ANTHROPIC_API_KEY"):
+            os.environ.pop("ANTHROPIC_AUTH_TOKEN", None)
 
 
 _client = None
@@ -61,3 +66,22 @@ def call_json(system, user, **kw):
 def pmap(fn, items, workers=8):
     with ThreadPoolExecutor(workers) as ex:
         return list(ex.map(fn, items))
+
+
+def diagnose():
+    load_env()
+    print("env names set (values hidden):", sorted(k for k in os.environ if "ANTHROPIC" in k.upper()))
+    k = os.environ.get("ANTHROPIC_API_KEY", "")
+    print("api key: length", len(k), "| starts with", (k[:3] + "...") if k else "(none)", "| has whitespace:", any(c.isspace() for c in k))
+    print("base url:", os.environ.get("ANTHROPIC_BASE_URL", "(default api.anthropic.com)"))
+
+
+if __name__ == "__main__":
+    diagnose()
+    # smoke test: one real call per model, prints the reply or the exact error
+    for m in (BULK, STRONG):
+        try:
+            r = client().messages.create(model=m, max_tokens=30, messages=[{"role": "user", "content": "Reply with the single word: ok"}])
+            print(m, "->", "".join(b.text for b in r.content if getattr(b, "type", "") == "text"))
+        except Exception as e:
+            print(m, "-> ERROR", type(e).__name__, str(e)[:400])
