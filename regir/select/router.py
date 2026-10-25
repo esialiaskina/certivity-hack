@@ -33,14 +33,15 @@ def heading_title(node) -> str:
     return re.sub(r"^\S+\s+", "", first)[:90]
 
 
-def match_headings(nodes, terms, max_title_words=9):
+def match_headings(nodes, terms, max_title_words=12):
     """Return nodes whose SHORT heading title contains all tokens of some product term."""
     tt = [(t, set(toks(t))) for t in terms if toks(t)]
     hits = []
     for n in nodes:
         if n.label == "front": continue
         title = heading_title(n)
-        if len(title.split()) > max_title_words: continue  # a sentence, not a heading
+        title_no_parens = re.sub(r"\([^)]*\)", "", title).strip()  # strip (R1, R2, MR) etc.
+        if len(title_no_parens.split()) > max_title_words: continue  # a sentence, not a heading
         ts = set(toks(title))
         for term, tset in tt:
             if tset and tset <= ts:

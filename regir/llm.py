@@ -41,16 +41,17 @@ def parse_json(text: str):
     raise ValueError("no JSON in reply: " + t[:120])
 
 
-def call(system: str, user: str, model: str = BULK, max_tokens: int = 4000, temperature: float = 0.0, fake=None) -> str:
+def call(system: str, user: str, model: str = BULK, max_tokens: int = 4000, temperature: float = 0.0,
+         fake=None, refresh: bool = False) -> str:
     """One cached call. `fake` (callable(system,user)->str) replaces the API in tests."""
     key = hashlib.sha256(json.dumps([model, system, user, max_tokens, temperature]).encode()).hexdigest()
     f = CACHE / f"{key}.txt"
-    if f.exists(): return f.read_text()
+    if f.exists() and not refresh: return f.read_text()
     if fake is not None: out = fake(system, user)
     else:
         for attempt in range(5):
             try:
-                r = client().messages.create(model=model, max_tokens=max_tokens, temperature=temperature,
+                r = client().messages.create(model=model, max_tokens=max_tokens,
                                              system=system, messages=[{"role": "user", "content": user}])
                 out = "".join(b.text for b in r.content if getattr(b, "type", "") == "text"); break
             except Exception as e:  # rate limit / overload: back off
@@ -60,7 +61,12 @@ def call(system: str, user: str, model: str = BULK, max_tokens: int = 4000, temp
 
 
 def call_json(system, user, **kw):
-    return parse_json(call(system, user, **kw))
+    try:
+        return parse_json(call(system, user, **kw))
+    except ValueError:
+        # A truncated/malformed cached response must not poison every future run.
+        # Retry the same structured request once without reusing its cache entry.
+        return parse_json(call(system, user, refresh=True, **kw))
 
 
 def pmap(fn, items, workers=8):

@@ -5,9 +5,9 @@ import re, json, os, sys, hashlib
 from regir.ingest.parse import parse_pdf, norm_label
 from regir import llm
 
-CUE = re.compile(r"\b(shall|must|should|may not|is required|are required|required to|is prohibited|are prohibited|not be permitted|"
+CUE = re.compile(r"\b(shall|must|should|may not|may|is required|are required|required to|is prohibited|are prohibited|not be permitted|"
                  r"only if|only when|only in|mandatory|has to|have to|not exceed|at least|at most|minimum|maximum|not be less|not be more|"
-                 r"not less than|not more than|permitted|allowed)\b", re.I)
+                 r"not less than|not more than|permitted|allowed|in accordance with|provided that)\b", re.I)
 ROLES = ["performance", "construction", "marking", "test_condition", "procedure", "conformity", "transitional", "definition", "informative"]
 
 SYSTEM = """You convert one paragraph of a UN vehicle regulation into atomic engineering obligations.
@@ -26,7 +26,7 @@ ERRORS: list[str] = []
 
 def _norm(s: str) -> str:
     s = s.replace("­", "").replace("’", "'").replace("‘", "'").replace("“", '"').replace("”", '"')
-    s = re.sub(r"-\s*\n\s*", "", s)           # hyphenated line breaks
+    s = re.sub(r"-\n\s*", "-", s)                                  # collapse line-breaks after hyphens (keeps the hyphen for both word-wrap and identifiers)
     return re.sub(r"\s+", " ", s).strip().casefold()
 
 
@@ -47,12 +47,14 @@ def candidates(nodes):
     return [n for n in nodes if n.label != "front" and len(n.text) > 25 and CUE.search(n.text)]
 
 
+MAX_TOKENS = 8192  # enough for nodes with 20+ atoms; 4096 was causing truncation
+
 def atomize_node(reg: str, version: str, node, chain: list[str], model=llm.BULK, fake=None):
     user = f"Regulation: {reg}\nContext path: {' > '.join(chain) or '(top level)'}\nParagraph label: {node.label}\n\nParagraph text:\n{node.text[:6000]}"
     for attempt in range(2):
         try:
             data = llm.call_json(SYSTEM, user + ("\n\n(Previous reply had a quote that is not verbatim. Copy quotes exactly.)" if attempt else ""),
-                                 model=model, fake=fake)
+                                 model=model, max_tokens=MAX_TOKENS, fake=fake)
         except Exception as e:
             ERRORS.append(f"{type(e).__name__}: {str(e)[:300]}")
             continue
