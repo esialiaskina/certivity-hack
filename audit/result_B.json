@@ -1,0 +1,98 @@
+[
+ {
+  "paragraph": "5.3.5.1",
+  "new_text": "The system shall initiate a driver unavailability response at the latest 10 seconds after it has detected to be beyond a system boundary, if the driver remains disengaged.",
+  "probability": 55,
+  "reason": "Numeric limit plus shall; not in V7; sim_old 56 so likely genuinely new. Strong gold-style fit."
+ },
+ {
+  "paragraph": "5.3.7.2.4.10",
+  "new_text": "Following completion of the system-initiated manoeuvre (performed when the driver is deemed disengaged) and once the situation is controllable for the driver, a DCA shall be given.",
+  "probability": 50,
+  "reason": "Plain shall obligation, not in V7 although siblings in the same paragraph are."
+ },
+ {
+  "paragraph": "5.3.6.1.2",
+  "new_text": "If the DCA is given whilst withholding HORs, the time required for the driver to direct their gaze to appropriate driving task relevant area(s) shall be considered in addition to the time required by paragraph 5.3.6.1.1.",
+  "probability": 50,
+  "reason": "Shall obligation; neighbours in V7; this sentence not flagged."
+ },
+ {
+  "paragraph": "6.2.4.1",
+  "new_text": "When the system deviates from the lane change assessment at speeds up to 60 km/h, the manufacturer shall explain to the Type Approval Authority the distances and timings for an approaching vehicle under which a lane change manoeuvre can be started, and provide evidence of those situations being deemed controllable for other road users.",
+  "probability": 45,
+  "reason": "Manufacturer obligation, not in V7 (only the first sentence is). Possibly matched via the V7 sentence, but separate gold item is plausible."
+ },
+ {
+  "paragraph": "5.5.4.2.6.5",
+  "new_text": "The manufacturer shall document the strategies implemented to ensure a reasonable duration of being able to withhold HORs and demonstrate them to the satisfaction of the Type Approval Authority.",
+  "probability": 45,
+  "reason": "Sentence not in V7. Also a possible lenient match for the alternatives sentence."
+ },
+ {
+  "paragraph": "5.5.4.2.6.5.7.1",
+  "new_text": "The strategy employed for classification and detection of the driver's position to operate the vehicle controls shall be documented by the manufacturer and assessed by the Type Approval Authority.",
+  "probability": 40,
+  "reason": "Obligation, sibling sentence in V7, this one not flagged."
+ },
+ {
+  "paragraph": "5.5.4.1.1",
+  "new_text": "The system shall inform the driver of the basis for why a DCA has been issued if not addressed by the points above or if it follows an engagement request escalation.",
+  "probability": 40,
+  "reason": "List item (i) with lead-in; new item. (h) basis for system being disabled due to insufficient engagement is a companion candidate (35)."
+ },
+ {
+  "paragraph": "5.5.4.2.8.2",
+  "new_text": "The system shall be disabled after at most 2 DCAs due to prolonged insufficient engagement.",
+  "probability": 35,
+  "reason": "(b) not in V7; sim_old 71, may be an old item with changed count (modified). Gold added uncertain."
+ },
+ {
+  "paragraph": "5.5.4.2.8.2",
+  "new_text": "The system shall be disabled after at most 3 engagement request escalations.",
+  "probability": 35,
+  "reason": "(c) not in V7; sim_old 62, likely changed or new count."
+ },
+ {
+  "paragraph": "5.5.4.1.9.4",
+  "new_text": "The visualization of the intended manoeuvre shall aim to not cause unnecessary distraction to the driver.",
+  "probability": 35,
+  "reason": "Shall obligation, not in V7."
+ },
+ {
+  "paragraph": "5.5.4.1.1",
+  "new_text": "The system shall inform the driver of the basis for the system being disabled due to insufficient engagement.",
+  "probability": 33,
+  "reason": "List item (h) with lead-in."
+ },
+ {
+  "paragraph": "5.5.4.2.6.5",
+  "new_text": "When the system is capable of withholding HORs on highway-like roads, it shall aim to ensure a reasonable duration of being able to withhold HORs by verifying before initiating withholding of HORs that the road ahead is deemed to have the necessary characteristics (as per paragraph 2.28.1.) for at least 500 m, or for at least 30 seconds at the vehicle's current speed.",
+  "probability": 30,
+  "reason": "Numeric limits, but these are already submitted as extras (i),(ii); only wording variant. Probability reflects that they are the possible single hit."
+ },
+ {
+  "paragraph": "5.5.4.2.8.2",
+  "new_text": "The system shall be disabled after one DCA following a system-initiated manoeuvre performed when the driver is deemed to be disengaged (as per paragraph 5.3.7.2.4.10.).",
+  "probability": 30,
+  "reason": "Re-split variant of (d) (V7 may have joined (d) and (e)); in case gold splits (d) and (e) separately."
+ },
+ {
+  "paragraph": "5.5.4.2.8.2",
+  "new_text": "The system shall be disabled after at most two DCAs which were not preceded by an escalation and not responded to in less than 5 seconds.",
+  "probability": 30,
+  "reason": "Re-split variant of (e) with numeric limits."
+ },
+ {
+  "paragraph": "5.3.7.2.1.13",
+  "new_text": "The manufacturer shall describe in the safety concept the system behaviour in case the driver is detected to be disengaged during a manoeuvre (e.g., aborting the manoeuvre, fully executing a manoeuvre, bringing the vehicle to a safe stop).",
+  "probability": 25,
+  "reason": "sim_old 83, probably reworded old text."
+ },
+ {
+  "paragraph": "5.5.4.2.6.5",
+  "new_text": "While withholding HORs, regardless of whether operated on a highway or a highway-like road, the following subparagraphs shall apply.",
+  "probability": 15,
+  "reason": "Lead-in only; unlikely a separate gold item."
+ }
+]

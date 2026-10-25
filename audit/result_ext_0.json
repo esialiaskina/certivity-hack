@@ -1,0 +1,128 @@
+[
+ {
+  "paragraph": "1.2.2",
+  "status": "added",
+  "old_id": null,
+  "new_text": "This UN Regulation shall not apply to vehicles of Categories X and Y.",
+  "probability": 20,
+  "covered_by_our_flags": true,
+  "note": "Scope exclusion; old scope text yielded no requirements, so builder likely skips. Our flag sits under 1.2 (matching 1.2.2 content)."
+ },
+ {
+  "paragraph": "1.2.1",
+  "status": "added",
+  "old_id": null,
+  "new_text": "This UN Regulation shall not apply to the approval of vehicles regarding ACSF/RMF approved to UN R79 unless the manufacturer declares them part of DCAS.",
+  "probability": 8,
+  "covered_by_our_flags": false,
+  "note": "Same sentence existed in old 1.2 (restructured into list); old yielded no requirement. Editorial restructuring."
+ },
+ {
+  "paragraph": "5.2.3",
+  "status": "added",
+  "old_id": null,
+  "new_text": "When an ADS feature is activated, the DCAS shall be switched to 'OFF' mode.",
+  "probability": 75,
+  "covered_by_our_flags": true,
+  "note": "New normative provision, clear obligation."
+ },
+ {
+  "paragraph": "5.2.3",
+  "status": "added",
+  "old_id": null,
+  "new_text": "While an ADS feature is active, the DCAS shall not be able to be switched to 'ON' mode.",
+  "probability": 70,
+  "covered_by_our_flags": true,
+  "note": "Builder may merge with previous item (then one added item)."
+ },
+ {
+  "paragraph": "5.3.5.1",
+  "status": "modified",
+  "old_id": "R-013",
+  "new_text": "If the DCAS identifies that the system or feature boundary is exceeded, then the DCAS or applicable feature shall leave the 'active' mode, with the exception of the driver unavailability response.",
+  "probability": 78,
+  "covered_by_our_flags": true,
+  "note": "Standby transition replaced by leaving active mode; meaning changed."
+ },
+ {
+  "paragraph": "5.3.5.1",
+  "status": "modified",
+  "old_id": "R-014",
+  "new_text": "If the DCAS identifies that the system or feature boundary is exceeded, then the DCAS shall immediately notify the driver per 5.3.5.2 and 5.5.4.1.",
+  "probability": 12,
+  "covered_by_our_flags": true,
+  "note": "Wording essentially unchanged; flagged by us as modified, likely false positive."
+ },
+ {
+  "paragraph": "5.3.5.1",
+  "status": "added",
+  "old_id": null,
+  "new_text": "If the driver is detected to be disengaged while the system or feature boundary is exceeded, the DCAS shall continue lateral and longitudinal assistance to the extent possible or terminate assistance gradually in a controllable way, per the manufacturer's safety concept.",
+  "probability": 80,
+  "covered_by_our_flags": true,
+  "note": "New obligation."
+ },
+ {
+  "paragraph": "5.3.5.1",
+  "status": "added",
+  "old_id": null,
+  "new_text": "The driver state monitoring system shall continue to monitor driver disengagement until the driver is motorically and visually reengaged.",
+  "probability": 75,
+  "covered_by_our_flags": true,
+  "note": "New obligation."
+ },
+ {
+  "paragraph": "5.3.5.1",
+  "status": "added",
+  "old_id": null,
+  "new_text": "If the driver remains disengaged, the DCAS shall initiate a driver unavailability response at the latest 10 seconds after detecting it is beyond a system boundary.",
+  "probability": 85,
+  "covered_by_our_flags": true,
+  "note": "New quantified requirement."
+ },
+ {
+  "paragraph": "5.3.6.1.2",
+  "status": "added",
+  "old_id": null,
+  "new_text": "If a DCA is given while performing a system-initiated manoeuvre, the manufacturer shall consider the time required for the driver to direct their gaze to driving-task-relevant areas after the DCA.",
+  "probability": 75,
+  "covered_by_our_flags": true,
+  "note": "New paragraph."
+ },
+ {
+  "paragraph": "5.3.6.1.2",
+  "status": "added",
+  "old_id": null,
+  "new_text": "If the DCA is given whilst withholding HORs, the gaze time shall be considered in addition to the time required by 5.3.6.1.1.",
+  "probability": 70,
+  "covered_by_our_flags": true,
+  "note": "New paragraph."
+ },
+ {
+  "paragraph": "5.3.6.1.2",
+  "status": "added",
+  "old_id": null,
+  "new_text": "The manufacturer shall explain to the Type Approval Authority the strategies and timing of assistance to the driver until the DCA is confirmed.",
+  "probability": 70,
+  "covered_by_our_flags": true,
+  "note": "New paragraph; documentation style items usually kept."
+ },
+ {
+  "paragraph": "2.28.1",
+  "status": "added",
+  "old_id": null,
+  "new_text": "(definition of Highway-like road)",
+  "probability": 8,
+  "covered_by_our_flags": false,
+  "note": "Pure definition, builder skips definitions."
+ },
+ {
+  "paragraph": "2.21",
+  "status": "modified",
+  "old_id": null,
+  "new_text": "RXSWIN renamed R171SWIN",
+  "probability": 3,
+  "covered_by_our_flags": false,
+  "note": "Editorial rename; definition, no old requirement."
+ }
+]

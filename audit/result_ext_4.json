@@ -1,0 +1,119 @@
+[
+ {
+  "paragraph": "5.5.4.2.8.4",
+  "status": "modified",
+  "old_id": "R-084",
+  "new_text": "When the system is disabled due to insufficient engagement by the driver, the system shall only be re-enabled after the driver has confirmed by a deliberate action their understanding of their responsibilities and appropriate use of the system.",
+  "probability": 88,
+  "covered_by_our_flags": true,
+  "note": "Obligation changed from requesting driver to read info material at powertrain deactivation to gating re-enable on deliberate confirmation. Clear meaning change."
+ },
+ {
+  "paragraph": "6.2.4.1",
+  "status": "added",
+  "old_id": null,
+  "new_text": "When the system deviates from the lane-change assessment at speeds up to 60 km/h, the manufacturer shall explain to the Type Approval Authority the distances and timings for an approaching vehicle under which a lane change manoeuvre can be started, and provide evidence of those situations being deemed controllable for other road users.",
+  "probability": 75,
+  "covered_by_our_flags": true,
+  "note": "New sentence with a clear manufacturer obligation; builder may emit as one or two requirements (explain / evidence). Our flags split into two; either way matches."
+ },
+ {
+  "paragraph": "6.2.4.1",
+  "status": "added",
+  "old_id": null,
+  "new_text": "At speeds up to 60 km/h the system may deviate from the assessment of the approaching vehicle's deceleration.",
+  "probability": 30,
+  "covered_by_our_flags": false,
+  "note": "Permissive 'may' clause; builder might fold into the explain requirement rather than keep standalone."
+ },
+ {
+  "paragraph": "6.2.4.1",
+  "status": "modified",
+  "old_id": "R-089",
+  "new_text": "When there is an approaching vehicle, the DCAS shall be designed to not make an approaching vehicle decelerate at a higher level than 3.0 m/s2 ... (except at speeds up to 60 km/h where deviation is allowed).",
+  "probability": 18,
+  "covered_by_our_flags": true,
+  "note": "Text of old sentences unchanged; only possible if builder bakes the exception into R-089. Our modified flag is likely a false positive."
+ },
+ {
+  "paragraph": "6.2.4.1",
+  "status": "modified",
+  "old_id": "R-090",
+  "new_text": "(unchanged assessment assumption, 1.4 s)",
+  "probability": 6,
+  "covered_by_our_flags": true,
+  "note": "Text unchanged; likely false positive in our flags."
+ },
+ {
+  "paragraph": "6.2.4.1",
+  "status": "modified",
+  "old_id": "R-091",
+  "new_text": "(unchanged assessment assumption, 0.4 s / 1.4 s)",
+  "probability": 6,
+  "covered_by_our_flags": true,
+  "note": "Text unchanged; likely false positive in our flags."
+ },
+ {
+  "paragraph": "6.4.1",
+  "status": "added",
+  "old_id": null,
+  "new_text": "The provisions of paragraphs 6.3.2. to 6.3.8. shall equally apply when going straight across an intersection for systems capable of performing a system-initiated left or right turn at that intersection.",
+  "probability": 72,
+  "covered_by_our_flags": true,
+  "note": "New normative sentence; heading 6.4 itself would be skipped."
+ },
+ {
+  "paragraph": "6.4.2",
+  "status": "added",
+  "old_id": null,
+  "new_text": "In non-highway environments, the system shall only make the vehicle automatically accelerate from standstill if the driver is not deemed to be visually disengaged as per paragraph 5.5.4.2.5. for more than 2 seconds immediately prior to the drive off.",
+  "probability": 75,
+  "covered_by_our_flags": true,
+  "note": "List item (a) split with lead-in. Builder may instead keep (a)+(b) in one requirement."
+ },
+ {
+  "paragraph": "6.4.2",
+  "status": "added",
+  "old_id": null,
+  "new_text": "In non-highway environments, the system shall only make the vehicle automatically accelerate from standstill if the system has confirmed there is no risk of collision detected along the drive-off path.",
+  "probability": 75,
+  "covered_by_our_flags": true,
+  "note": "List item (b) split with lead-in."
+ },
+ {
+  "paragraph": "7.2.3.1",
+  "status": "added",
+  "old_id": null,
+  "new_text": "The information reported to the Type Approval Authority is not intended to be shared publicly.",
+  "probability": 40,
+  "covered_by_our_flags": true,
+  "note": "Short informational-style sentence; builder may skip as non-engineering. Phrased as shall-less statement, so risky."
+ },
+ {
+  "paragraph": "7.2.3.1",
+  "status": "modified",
+  "old_id": "R-105",
+  "new_text": "The manufacturer shall report at least the information listed in the table below, which can be shared in confidence with other Type Approval Authorities on request, and be notified in this case (information not intended to be shared publicly).",
+  "probability": 15,
+  "covered_by_our_flags": false,
+  "note": "Only if builder merges the new sentence into R-105; otherwise unchanged."
+ },
+ {
+  "paragraph": "9.1.8",
+  "status": "added",
+  "old_id": null,
+  "new_text": "The manufacturer shall state whether the system continues to provide lateral control assistance where the lane is demarked by something other than a lane marking (parked cars, curb, construction infrastructure) in non-highway operation.",
+  "probability": 8,
+  "covered_by_our_flags": false,
+  "note": "Table-row addition in an annex-like information document; builder produced no requirements for this paragraph in old version, so unlikely."
+ },
+ {
+  "paragraph": "10.1",
+  "status": "modified",
+  "old_id": "R-109",
+  "new_text": "Where R171SWIN is not held on the vehicle, the vehicle manufacturer shall declare the software version(s) ... to the Type Approval Authority.",
+  "probability": 5,
+  "covered_by_our_flags": false,
+  "note": "Only typo fix (R 1XX -> R 1 71, 'ay' -> 'may'); meaning identical."
+ }
+]

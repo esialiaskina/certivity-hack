@@ -1,0 +1,65 @@
+[
+ {
+  "paragraph": "16.2.2",
+  "status": "added",
+  "old_id": null,
+  "new_text": "As from 1 September 2032, Contracting Parties shall not be obliged to accept type approvals issued to the preceding series of amendments.",
+  "probability": 4,
+  "covered_by_our_flags": false,
+  "note": "Transitional provision; builder skips these. Old 16.2/16.3 yielded no requirements, so nothing removed/modified."
+ },
+ {
+  "paragraph": "16.2.3",
+  "status": "added",
+  "old_id": null,
+  "new_text": "As from 1 September 2029, Contracting Parties shall not be obliged to accept type approvals to the preceding series for systems capable of withholding HOR's on highway-like roads.",
+  "probability": 7,
+  "covered_by_our_flags": false,
+  "note": "Transitional; slight chance because of technical HOR reference."
+ },
+ {
+  "paragraph": "16.3.1",
+  "status": "added",
+  "old_id": null,
+  "new_text": "Contracting Parties may grant type approvals according to any preceding series of amendments.",
+  "probability": 4,
+  "covered_by_our_flags": false,
+  "note": "Transitional, permissive."
+ },
+ {
+  "paragraph": "16.3.2",
+  "status": "added",
+  "old_id": null,
+  "new_text": "Contracting Parties shall continue to grant extensions of existing approvals to any preceding series of amendments.",
+  "probability": 8,
+  "covered_by_our_flags": false,
+  "note": "Transitional but uses 'shall'; still administrative."
+ },
+ {
+  "paragraph": "18",
+  "status": "added",
+  "old_id": null,
+  "new_text": "DCAS shall only be permitted to operate when a driver is in control.",
+  "probability": 25,
+  "covered_by_our_flags": true,
+  "note": "Explanatory/informational intro text (like Para 2, which did yield a requirement). Builder may keep one normative-sounding sentence; this is the likeliest."
+ },
+ {
+  "paragraph": "18",
+  "status": "added",
+  "old_id": null,
+  "new_text": "Vehicles without the ability to be controlled by a driver (Categories X and Y) shall not be required to comply with this Regulation.",
+  "probability": 14,
+  "covered_by_our_flags": true,
+  "note": "Scope exemption inside informational note; more likely captured under Scope para 1."
+ },
+ {
+  "paragraph": "18",
+  "status": "added",
+  "old_id": null,
+  "new_text": "For vehicles with ADS other than Categories X and Y, no special provisions or exemptions shall apply in the manual driving mode.",
+  "probability": 10,
+  "covered_by_our_flags": true,
+  "note": "Informational rationale; low."
+ }
+]

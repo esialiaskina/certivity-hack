@@ -1,0 +1,38 @@
+[
+ {
+  "id": "R-024",
+  "probability": 25,
+  "change": "modified/removed",
+  "evidence": "Old para: 'The requirements outlined in paragraph 5.5.4.1.8. and subparagraphs shall apply.' [78, no identical counterpart in new] + 'In addition, the system shall be designed...' -> new: 'The system shall be designed to ensure that the driver has sufficient time...'. Cross-reference obligation dropped; own sentence only loses 'In addition,' (editorial)."
+ },
+ {
+  "id": "R-015",
+  "probability": 20,
+  "change": "modified",
+  "evidence": "5.3.5.1: own sentence 'The system shall terminate assistance ... in a controllable way' is kept at 100, but new text inserts 'If the driver is detected to be disengaged ... continue providing lateral and longitudinal assistance to the extent possible or terminate assistance gradually in a controllable way' qualifying it; mostly a neighbouring/added change."
+ },
+ {
+  "id": "R-065",
+  "probability": 15,
+  "change": "modified",
+  "evidence": "Own sentence unchanged (100). Neighbouring sentence gained 'at least 3 seconds ahead' + new evidence sentence; old 'In addition, lane change ... announced by another modality' (60) dropped."
+ },
+ {
+  "id": "R-083",
+  "probability": 15,
+  "change": "modified",
+  "evidence": "Own sentence identical (100); new added sentence 'The disablement shall happen once the driver has resumed control of the vehicle, or the vehicle has become stationary.' clarifies timing of the disablement."
+ },
+ {
+  "id": "R-102",
+  "probability": 15,
+  "change": "modified",
+  "evidence": "'in the English language' -> 'in English language' (99), footnote renumbered [1]->[4]; 'If'/'When' wording. Likely editorial."
+ },
+ {
+  "id": "R-103",
+  "probability": 15,
+  "change": "modified",
+  "evidence": "Same DETA paragraph as R-102: 'in the English language' -> 'in English language' (99); likely editorial."
+ }
+]

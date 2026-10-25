@@ -1,0 +1,164 @@
+[
+ {
+  "paragraph": "5.3.7.2.6",
+  "status": "added",
+  "old_id": null,
+  "new_text": "Systems capable of performing system-initiated manoeuvres in non-highway environments or during phases of withholding of HORs shall comply with the special provisions of paragraph 5.3.7.2.6.",
+  "probability": 15,
+  "covered_by_our_flags": false,
+  "note": "Heading-like scope sentence; builder usually skips headings. Low chance; if kept it is a scope stub."
+ },
+ {
+  "paragraph": "5.3.7.2.6.1",
+  "status": "added",
+  "old_id": null,
+  "new_text": "Where extended testing in Annex 4 includes different VUT speeds, the extended testing shall cover the maximum operating speed in the applicable test scenarios.",
+  "probability": 55,
+  "covered_by_our_flags": true,
+  "note": "Genuine new normative sentence, but test-procedure/annex-referencing; builder may skip."
+ },
+ {
+  "paragraph": "5.3.7.3.1",
+  "status": "modified",
+  "old_id": "R-043",
+  "new_text": "The system's driver unavailability response shall comply with the technical requirements and transitional provisions of the 04 or later series of amendments to UN R79 with respect to the RMF.",
+  "probability": 45,
+  "covered_by_our_flags": true,
+  "note": "Subject changed from 'The system' to 'driver unavailability response'; obligation essentially same, so may be judged editorial."
+ },
+ {
+  "paragraph": "5.3.7.3.1",
+  "status": "modified",
+  "old_id": "R-044",
+  "new_text": "When the driver has been determined to be unavailable following a driver disengagement warning escalation sequence as defined in 5.5.4.2.6., the system shall come to a safe stop in accordance with the RMF requirements.",
+  "probability": 55,
+  "covered_by_our_flags": true,
+  "note": "'appropriately activate the RMF' replaced by 'come to a safe stop in accordance with RMF requirements'; meaning shifts slightly."
+ },
+ {
+  "paragraph": "5.3.7.3.3",
+  "status": "modified",
+  "old_id": "R-045",
+  "new_text": "Where the system is equipped with a driver-confirmed or system-initiated lane change feature, the system shall be capable of performing lane changes during the driver unavailability response, in compliance with the RMF requirements of UN R79 04 series, during an intervention on a highway to a target stop area in a slower or emergency lane.",
+  "probability": 50,
+  "covered_by_our_flags": true,
+  "note": "Subject RMF -> system and scoped to driver unavailability response; mostly rewording."
+ },
+ {
+  "paragraph": "5.3.7.3.4",
+  "status": "added",
+  "old_id": null,
+  "new_text": "A system-initiated manoeuvre may be performed at any time as part of the driver unavailability response in order to mitigate risk irrespective of the disengagement of the driver or warnings given.",
+  "probability": 45,
+  "covered_by_our_flags": true,
+  "note": "Permissive 'may' sentence; builder might merge with next or skip."
+ },
+ {
+  "paragraph": "5.3.7.3.4",
+  "status": "added",
+  "old_id": null,
+  "new_text": "The system shall only perform a system-initiated manoeuvre as part of the driver unavailability response after driver reengagement strategies have failed or if there is an imminent risk of collision.",
+  "probability": 70,
+  "covered_by_our_flags": true,
+  "note": "Clear restrictive shall."
+ },
+ {
+  "paragraph": "5.3.7.3.4",
+  "status": "added",
+  "old_id": null,
+  "new_text": "The manufacturer shall describe and justify to the Type Approval Authority the circumstances in which a system-initiated manoeuvre is performed as part of the driver unavailability response.",
+  "probability": 65,
+  "covered_by_our_flags": true,
+  "note": "Documentation obligation; builder style keeps these (cf R-030)."
+ },
+ {
+  "paragraph": "5.5.4.1.1",
+  "status": "added",
+  "old_id": null,
+  "new_text": "The system shall inform or warn the driver about the basis for the system being disabled due to insufficient engagement.",
+  "probability": 70,
+  "covered_by_our_flags": true,
+  "note": "New list item (h), split with lead-in."
+ },
+ {
+  "paragraph": "5.5.4.1.1",
+  "status": "added",
+  "old_id": null,
+  "new_text": "The system shall inform or warn the driver about the basis for why a DCA has been issued if not addressed by the points above or if it follows an engagement request escalation.",
+  "probability": 70,
+  "covered_by_our_flags": true,
+  "note": "New list item (i), split with lead-in. Item (g) change is punctuation only."
+ },
+ {
+  "paragraph": "5.5.4.1.9.2",
+  "status": "modified",
+  "old_id": "R-064",
+  "new_text": "The system shall aim to provide the visual information at least 3 seconds ahead of the initiation of a relevant intended manoeuvre or with sufficient notice to allow the driver to comprehend the manoeuvre and the traffic situation, taking into account complexity and number of other road users.",
+  "probability": 80,
+  "covered_by_our_flags": true,
+  "note": "Adds concrete 3 s figure; numeric change."
+ },
+ {
+  "paragraph": "5.5.4.1.9.2",
+  "status": "removed",
+  "old_id": "R-066",
+  "new_text": "(removed) In addition, the initiation of a lane change procedure shall be announced by another modality unless the system has assessed that the driver has observed the visual information.",
+  "probability": 75,
+  "covered_by_our_flags": true,
+  "note": "Sentence deleted in new text. R-065 (imminent collision, reduced time) unchanged."
+ },
+ {
+  "paragraph": "5.5.4.1.9.2",
+  "status": "added",
+  "old_id": null,
+  "new_text": "Where the notice is less than 3 seconds ahead of initiation, the manufacturer shall provide evidence to the satisfaction of the Type Approval Authority that the timing ensures an appropriate driver response and the strategies employed ensure drivers notice the information without undue delay.",
+  "probability": 75,
+  "covered_by_our_flags": true,
+  "note": "New conditional obligation."
+ },
+ {
+  "paragraph": "5.5.4.1.9.4",
+  "status": "added",
+  "old_id": null,
+  "new_text": "The system shall offer the driver the possibility to visualize at least a representation of the intended manoeuvre.",
+  "probability": 70,
+  "covered_by_our_flags": true,
+  "note": "New paragraph."
+ },
+ {
+  "paragraph": "5.5.4.1.9.4",
+  "status": "added",
+  "old_id": null,
+  "new_text": "The visualization of the intended manoeuvre shall aim to not cause unnecessary distraction to the driver.",
+  "probability": 55,
+  "covered_by_our_flags": true,
+  "note": "Second sentence; may be kept as 'shall aim' like R-032."
+ },
+ {
+  "paragraph": "5.5.4.2.5.2",
+  "status": "modified",
+  "old_id": "R-072",
+  "new_text": "For the purpose of the assessment of visual disengagement, the dashboard and instrument panel may be considered as a driving task relevant area only while manoeuvre relevant information (5.5.4.1.8.1. or 5.5.4.1.9.4.) is displayed for a maximum duration of 3 seconds.",
+  "probability": 80,
+  "covered_by_our_flags": true,
+  "note": "Reversal from 'shall not be considered' to conditional permission."
+ },
+ {
+  "paragraph": "5.5.4.2.5.2",
+  "status": "added",
+  "old_id": null,
+  "new_text": "The EOR warning time shall not be extended with the time the driver's gaze is directed towards the dashboard or instrument panel.",
+  "probability": 65,
+  "covered_by_our_flags": true,
+  "note": "New sentence."
+ },
+ {
+  "paragraph": "5.5.4.2.5.2.1",
+  "status": "modified",
+  "old_id": "R-073",
+  "new_text": "When either eye gaze or head posture are re-directed towards any currently driving task relevant area with the exception of the dashboard and the instrument panel for a sufficient duration depending on the situation, the system shall deem the driver to be visually reengaged following an aversion of eye gaze or head posture.",
+  "probability": 65,
+  "covered_by_our_flags": true,
+  "note": "Dashboard/instrument panel excluded for reengagement; 'engaged or' dropped. Our flag on R-074 (200 ms) looks like a false positive: the 200 ms obligation is unchanged, though a builder could fold the exception into it (~25%)."
+ }
+]

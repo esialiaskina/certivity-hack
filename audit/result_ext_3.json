@@ -1,0 +1,227 @@
+[
+ {
+  "paragraph": "5.5.4.2.6.5",
+  "status": "modified",
+  "old_id": "R-077",
+  "new_text": "The manufacturer shall describe in detail, as part of the documentation required for section 9, the boundary conditions under which Hands-On Requests (HORs) can be withheld when the vehicle is located on a \"Highway\" or a \"Highway-like\" road and is operated at a speed up to 130 km/h, as outlined in paragraph 5.3.5.2.",
+  "probability": 80,
+  "covered_by_our_flags": true,
+  "note": "Scope widened to highway-like roads; obligation scope changed."
+ },
+ {
+  "paragraph": "5.5.4.2.6.5",
+  "status": "added",
+  "old_id": null,
+  "new_text": "When the system is capable of withholding HORs on highway-like roads, the system shall aim to avoid frequent fluctuations between being able and not able to withhold HORs (e.g., not operating on discontinuous sections of highway-like roads).",
+  "probability": 65,
+  "covered_by_our_flags": true,
+  "note": "Clear normative sentence; builder likely keeps."
+ },
+ {
+  "paragraph": "5.5.4.2.6.5",
+  "status": "added",
+  "old_id": null,
+  "new_text": "The system shall aim to ensure a reasonable duration of being able to withhold HORs by verifying, before initiating withholding, that the road ahead is deemed to have the necessary characteristics (para 2.28.1.) for at least 500 m.",
+  "probability": 68,
+  "covered_by_our_flags": true,
+  "note": "List item (i) split with lead-in."
+ },
+ {
+  "paragraph": "5.5.4.2.6.5",
+  "status": "added",
+  "old_id": null,
+  "new_text": "The system shall aim to ensure a reasonable duration of being able to withhold HORs by verifying, before initiating withholding, that the road ahead is deemed to have the necessary characteristics (para 2.28.1.) for at least 30 seconds at the vehicle's current speed.",
+  "probability": 68,
+  "covered_by_our_flags": true,
+  "note": "List item (ii) split with lead-in; builder may merge (i)/(ii) into one."
+ },
+ {
+  "paragraph": "5.5.4.2.6.5",
+  "status": "added",
+  "old_id": null,
+  "new_text": "The manufacturer shall document alternative strategies expected to result in at least an equivalent duration of being able to withhold HORs and demonstrate them to the satisfaction of the Type Approval Authority.",
+  "probability": 50,
+  "covered_by_our_flags": true,
+  "note": "The 'may implement other strategies' sentence is permissive, so likely skipped; the documentation sentence is more likely."
+ },
+ {
+  "paragraph": "5.5.4.2.6.5",
+  "status": "added",
+  "old_id": null,
+  "new_text": "The manufacturer shall demonstrate the system's ability to safely operate in the presence of cyclists.",
+  "probability": 70,
+  "covered_by_our_flags": true,
+  "note": ""
+ },
+ {
+  "paragraph": "5.5.4.2.6.5",
+  "status": "added",
+  "old_id": null,
+  "new_text": "The system's ability to safely operate in the presence of cyclists shall be demonstrated by avoidance of a collision with a longitudinally travelling cyclist ahead in lane as outlined in Annex 4, paragraph 4.2.5.2.16., taking into account the robustness criteria in Appendix 4 of Annex 3.",
+  "probability": 50,
+  "covered_by_our_flags": true,
+  "note": "May be merged with the previous item (annex-referenced test)."
+ },
+ {
+  "paragraph": "5.5.4.2.6.5",
+  "status": "added",
+  "old_id": null,
+  "new_text": "When the end of a highway-like road is expected to require a manoeuvre controlled by the driver, an HOR shall aim to be given at least 7 seconds prior to the time the necessary manoeuvre needs to start.",
+  "probability": 75,
+  "covered_by_our_flags": true,
+  "note": ""
+ },
+ {
+  "paragraph": "5.5.4.2.6.5.7.1",
+  "status": "added",
+  "old_id": null,
+  "new_text": "The system shall aim to determine whether or not the driver is in an appropriate position to operate the vehicle controls.",
+  "probability": 75,
+  "covered_by_our_flags": true,
+  "note": ""
+ },
+ {
+  "paragraph": "5.5.4.2.6.5.7.1",
+  "status": "added",
+  "old_id": null,
+  "new_text": "The strategy employed for classification and detection of the driver's position shall be documented by the manufacturer and assessed by the Type Approval Authority.",
+  "probability": 55,
+  "covered_by_our_flags": true,
+  "note": "Builder may split documented / assessed, or skip as documentation."
+ },
+ {
+  "paragraph": "5.5.4.2.6.5.7.2",
+  "status": "added",
+  "old_id": null,
+  "new_text": "If the driver is deemed, as per the strategy, not to be in an appropriate position to operate the vehicle controls for 10 seconds, the system shall give an HOR.",
+  "probability": 80,
+  "covered_by_our_flags": true,
+  "note": ""
+ },
+ {
+  "paragraph": "5.5.4.2.6.5.7.3",
+  "status": "added",
+  "old_id": null,
+  "new_text": "Following such an HOR, the system may continue to perform system-initiated manoeuvres.",
+  "probability": 30,
+  "covered_by_our_flags": true,
+  "note": "Permissive 'may'; likely skipped."
+ },
+ {
+  "paragraph": "5.5.4.2.6.5.7.3",
+  "status": "added",
+  "old_id": null,
+  "new_text": "Following such an HOR, the system shall only resume operating while withholding HORs once the driver has been deemed to be in an appropriate position to operate the vehicle controls and not to be motorically disengaged for at least 30 seconds.",
+  "probability": 72,
+  "covered_by_our_flags": true,
+  "note": ""
+ },
+ {
+  "paragraph": "5.5.4.2.6.5.7.3",
+  "status": "added",
+  "old_id": null,
+  "new_text": "The driver shall be informed of the basis for why the system will not resume withholding HORs.",
+  "probability": 65,
+  "covered_by_our_flags": true,
+  "note": ""
+ },
+ {
+  "paragraph": "5.5.4.2.7.1",
+  "status": "modified",
+  "old_id": "R-081",
+  "new_text": "The driver state monitoring system shall have strategies to assess whether the driver is disengaged when no driver input has been determined over prolonged periods (e.g. through a negative determination of driver drowsiness or assessment of changes in gaze direction).",
+  "probability": 55,
+  "covered_by_our_flags": true,
+  "note": "Text moved from 5.5.4.2.7 to new subparagraph 7.1 with 'or assessment of changes in gaze direction' added. Risk: builder may instead record the move as removed+added, or treat the example addition as unchanged (about 35%)."
+ },
+ {
+  "paragraph": "5.5.4.2.7.1",
+  "status": "modified",
+  "old_id": "R-082",
+  "new_text": "When no driver input has been determined over prolonged periods (e.g. through a negative determination of driver drowsiness or assessment of changes in gaze direction), the driver state monitoring system shall implement appropriate countermeasures.",
+  "probability": 55,
+  "covered_by_our_flags": true,
+  "note": "Text moved from 5.5.4.2.7 to new subparagraph 7.1 with 'or assessment of changes in gaze direction' added. Risk: builder may instead record the move as removed+added, or treat the example addition as unchanged (about 35%)."
+ },
+ {
+  "paragraph": "5.5.4.2.7.2",
+  "status": "added",
+  "old_id": null,
+  "new_text": "During phases of operation where the system is able to perform system-initiated manoeuvres, the driver state monitoring system shall have additional strategies to assess behaviours indicating consistent engagement with the driving task by determining drowsiness.",
+  "probability": 65,
+  "covered_by_our_flags": true,
+  "note": "List item (a) split with lead-in."
+ },
+ {
+  "paragraph": "5.5.4.2.7.2",
+  "status": "added",
+  "old_id": null,
+  "new_text": "During phases of operation where the system is able to perform system-initiated manoeuvres, the driver state monitoring system shall have additional strategies to assess that the driver performs changes in eye gaze with a frequency and/or direction appropriate to the current traffic environment and upcoming manoeuvres, and that these behaviours do not degrade over time.",
+  "probability": 68,
+  "covered_by_our_flags": true,
+  "note": "List item (b)."
+ },
+ {
+  "paragraph": "5.5.4.2.7.2",
+  "status": "added",
+  "old_id": null,
+  "new_text": "If the driver's behaviours do not indicate consistent engagement with the driving task, the system shall not initiate system-initiated manoeuvres other than in situations of imminent collision risk.",
+  "probability": 78,
+  "covered_by_our_flags": true,
+  "note": ""
+ },
+ {
+  "paragraph": "5.5.4.2.7.2",
+  "status": "added",
+  "old_id": null,
+  "new_text": "If the driver's behaviours do not indicate consistent engagement with the driving task, appropriate countermeasures shall be applied as described in the safety concept.",
+  "probability": 55,
+  "covered_by_our_flags": true,
+  "note": "May merge with previous item."
+ },
+ {
+  "paragraph": "5.5.4.2.7.2",
+  "status": "added",
+  "old_id": null,
+  "new_text": "The strategies implemented to assess consistent driver engagement shall be documented by the manufacturer and assessed by the Type Approval Authority.",
+  "probability": 50,
+  "covered_by_our_flags": true,
+  "note": "Our flags split into two; builder likely one or none."
+ },
+ {
+  "paragraph": "5.5.4.2.8.1",
+  "status": "added",
+  "old_id": null,
+  "new_text": "The disablement of the system shall happen once the driver has resumed control of the vehicle, or the vehicle has become stationary.",
+  "probability": 65,
+  "covered_by_our_flags": true,
+  "note": "Timing of disablement is new; R-083 itself is unchanged."
+ },
+ {
+  "paragraph": "5.5.4.2.8.2",
+  "status": "added",
+  "old_id": null,
+  "new_text": "The driver shall be deemed to have insufficient engagement when this leads to one DCA following a system-initiated manoeuvre performed when the driver is deemed to be disengaged (as per paragraph 5.3.7.2.4.10.).",
+  "probability": 25,
+  "covered_by_our_flags": true,
+  "note": "Old para yielded no requirement (definitional), so the builder likely skips the new items as well. Our flag is a high-risk false positive."
+ },
+ {
+  "paragraph": "5.5.4.2.8.2",
+  "status": "added",
+  "old_id": null,
+  "new_text": "The driver shall be deemed to have insufficient engagement when this leads to at most two DCAs which were not preceded by an escalation and not responded to in less than 5 seconds.",
+  "probability": 25,
+  "covered_by_our_flags": true,
+  "note": "As above."
+ },
+ {
+  "paragraph": "5.5.4.2.8.2",
+  "status": "added",
+  "old_id": null,
+  "new_text": "For (a), (b), (d) and (e), counting shall be reset when the system is no longer disabled.",
+  "probability": 15,
+  "covered_by_our_flags": true,
+  "note": "Almost certainly skipped; old counting-reset sentence produced no requirement."
+ }
+]

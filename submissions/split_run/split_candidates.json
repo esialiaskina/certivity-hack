@@ -1,0 +1,1934 @@
+[
+ {
+  "text": "For vehicles with 12 V systems, the positive transient pulse amplitude emitted by the ESA on its supply lines, tested according to ISO 7637-2 as described in Annex 10, shall not exceed +75 V.",
+  "source": {
+   "regulation": "UN R10",
+   "version": "7.2.0",
+   "page": 10,
+   "paragraph": "6.7.1"
+  },
+  "verbatim_quote": "|Positive|+75 V|+150 V|",
+  "why_distinct": "Positive-polarity table row combined with the 12 V category forms its own pass/fail limit, but R-0015 bundles it with the other limits.",
+  "_pass": "split"
+ },
+ {
+  "text": "For vehicles with 12 V systems, the negative transient pulse amplitude emitted by the ESA on its supply lines, tested according to ISO 7637-2 as described in Annex 10, shall not exceed -100 V.",
+  "source": {
+   "regulation": "UN R10",
+   "version": "7.2.0",
+   "page": 10,
+   "paragraph": "6.7.1"
+  },
+  "verbatim_quote": "|Negative|-100 V|-450 V|",
+  "why_distinct": "Negative-polarity table row for the 12 V category is a separate limit that R-0015 bundles together.",
+  "_pass": "split"
+ },
+ {
+  "text": "For vehicles with 24 V systems, the positive transient pulse amplitude emitted by the ESA on its supply lines, tested according to ISO 7637-2 as described in Annex 10, shall not exceed +150 V.",
+  "source": {
+   "regulation": "UN R10",
+   "version": "7.2.0",
+   "page": 10,
+   "paragraph": "6.7.1"
+  },
+  "verbatim_quote": "|Positive|+75 V|+150 V|",
+  "why_distinct": "The 24 V category has a different positive limit from 12 V, so it is a distinct requirement under the category and table row rules.",
+  "_pass": "split"
+ },
+ {
+  "text": "For vehicles with 24 V systems, the negative transient pulse amplitude emitted by the ESA on its supply lines, tested according to ISO 7637-2 as described in Annex 10, shall not exceed -450 V.",
+  "source": {
+   "regulation": "UN R10",
+   "version": "7.2.0",
+   "page": 10,
+   "paragraph": "6.7.1"
+  },
+  "verbatim_quote": "|Negative|-100 V|-450 V|",
+  "why_distinct": "The 24 V category has a different negative limit from 12 V, so it is a distinct requirement under the category and table row rules.",
+  "_pass": "split"
+ },
+ {
+  "text": "Stripline test (Table 2a): the ESA shall withstand 60 V/m over 20 to 400 MHz, in over 90 per cent of the 20 to 6,000 MHz frequency band.",
+  "source": {
+   "regulation": "UN R10",
+   "version": "7.2.0",
+   "page": 11,
+   "paragraph": "6.8.2.1"
+  },
+  "verbatim_quote": "Test level below 2 GHz|60 V/m|75 V/m|60 mA|30 V/m|21 V/m",
+  "why_distinct": "Stripline is a distinct test method column with its own frequency range and level; R-0019 bundles all methods together.",
+  "_pass": "split"
+ },
+ {
+  "text": "TEM cell test (Table 2a): the ESA shall withstand 75 V/m over 20 to 200 MHz, in over 90 per cent of the 20 to 6,000 MHz frequency band.",
+  "source": {
+   "regulation": "UN R10",
+   "version": "7.2.0",
+   "page": 11,
+   "paragraph": "6.8.2.1"
+  },
+  "verbatim_quote": "Test level below 2 GHz|60 V/m|75 V/m|60 mA|30 V/m|21 V/m",
+  "why_distinct": "TEM cell is a separate test condition with a different range and level than the other methods bundled in R-0019.",
+  "_pass": "split"
+ },
+ {
+  "text": "BCI test (Table 2a): the ESA shall withstand 60 mA over 20 to 400 MHz, in over 90 per cent of the 20 to 6,000 MHz frequency band.",
+  "source": {
+   "regulation": "UN R10",
+   "version": "7.2.0",
+   "page": 11,
+   "paragraph": "6.8.2.1"
+  },
+  "verbatim_quote": "Test level below 2 GHz|60 V/m|75 V/m|60 mA|30 V/m|21 V/m",
+  "why_distinct": "BCI uses a current-based criterion and is a distinct test condition bundled in R-0019.",
+  "_pass": "split"
+ },
+ {
+  "text": "ALSE test (Table 2a): the ESA shall withstand 30 V/m over 80 to 2,000 MHz and 10 V/m over 2,000 to 6,000 MHz, in over 90 per cent of the 20 to 6,000 MHz frequency band.",
+  "source": {
+   "regulation": "UN R10",
+   "version": "7.2.0",
+   "page": 11,
+   "paragraph": "6.8.2.1"
+  },
+  "verbatim_quote": "Test level above 2 GHz|Not applicable|Not applicable|Not applicable|10 V/m|7 V/m",
+  "why_distinct": "ALSE is a distinct method with its own levels below and above 2 GHz, bundled in R-0019.",
+  "_pass": "split"
+ },
+ {
+  "text": "Reverberation chamber test (Table 2a): the ESA shall withstand 21 V/m from LUF to 2,000 MHz and 7 V/m over 2,000 to 6,000 MHz, in over 90 per cent of the 20 to 6,000 MHz frequency band.",
+  "source": {
+   "regulation": "UN R10",
+   "version": "7.2.0",
+   "page": 11,
+   "paragraph": "6.8.2.1"
+  },
+  "verbatim_quote": "Test level above 2 GHz|Not applicable|Not applicable|Not applicable|10 V/m|7 V/m",
+  "why_distinct": "The reverberation chamber is a distinct method with its own levels, bundled in R-0019.",
+  "_pass": "split"
+ },
+ {
+  "text": "Stripline test (Table 2b): the minimum test level over the whole 20 to 6,000 MHz band shall be 50 V/m over 20 to 400 MHz.",
+  "source": {
+   "regulation": "UN R10",
+   "version": "7.2.0",
+   "page": 11,
+   "paragraph": "6.8.2.1"
+  },
+  "verbatim_quote": "Test level below 2 GHz|50 V/m|62,5 V/m|50 mA|25 V/m|18 V/m",
+  "why_distinct": "This is the stripline minimum level, a distinct condition bundled in R-0020.",
+  "_pass": "split"
+ },
+ {
+  "text": "TEM cell test (Table 2b): the minimum test level over the whole 20 to 6,000 MHz band shall be 62.5 V/m over 20 to 200 MHz.",
+  "source": {
+   "regulation": "UN R10",
+   "version": "7.2.0",
+   "page": 11,
+   "paragraph": "6.8.2.1"
+  },
+  "verbatim_quote": "Test level below 2 GHz|50 V/m|62,5 V/m|50 mA|25 V/m|18 V/m",
+  "why_distinct": "This is the TEM cell minimum level, a distinct condition bundled in R-0020.",
+  "_pass": "split"
+ },
+ {
+  "text": "BCI test (Table 2b): the minimum test level over the whole 20 to 6,000 MHz band shall be 50 mA over 20 to 400 MHz.",
+  "source": {
+   "regulation": "UN R10",
+   "version": "7.2.0",
+   "page": 11,
+   "paragraph": "6.8.2.1"
+  },
+  "verbatim_quote": "Test level below 2 GHz|50 V/m|62,5 V/m|50 mA|25 V/m|18 V/m",
+  "why_distinct": "This is the BCI minimum level, a distinct condition bundled in R-0020.",
+  "_pass": "split"
+ },
+ {
+  "text": "ALSE test (Table 2b): the minimum test level over the whole 20 to 6,000 MHz band shall be 25 V/m over 80 to 2,000 MHz and 8 V/m over 2,000 to 6,000 MHz.",
+  "source": {
+   "regulation": "UN R10",
+   "version": "7.2.0",
+   "page": 11,
+   "paragraph": "6.8.2.1"
+  },
+  "verbatim_quote": "Test level above 2 GHz|Not|Not|Not|8 V/m|6 V/m",
+  "why_distinct": "This is the ALSE minimum level, a distinct condition bundled in R-0020.",
+  "_pass": "split"
+ },
+ {
+  "text": "Reverberation chamber test (Table 2b): the minimum test level over the whole 20 to 6,000 MHz band shall be 18 V/m from LUF to 2,000 MHz and 6 V/m over 2,000 to 6,000 MHz.",
+  "source": {
+   "regulation": "UN R10",
+   "version": "7.2.0",
+   "page": 11,
+   "paragraph": "6.8.2.1"
+  },
+  "verbatim_quote": "Test level above 2 GHz|Not|Not|Not|8 V/m|6 V/m",
+  "why_distinct": "This is the reverberation chamber minimum level, a distinct condition bundled in R-0020.",
+  "_pass": "split"
+ },
+ {
+  "text": "Test pulse 1: immunity test level -75 V for 12 V systems and -450 V for 24 V systems, 500 pulses; the ESA shall achieve FPSC III for functions related to immunity-related functions and FPSC III for functions not related to immunity-related functions.",
+  "source": {
+   "regulation": "UN R10",
+   "version": "7.2.0",
+   "page": 12,
+   "paragraph": "6.9.1"
+  },
+  "verbatim_quote": "|1|-75 V|-450 V|500 pulses|III|III|",
+  "why_distinct": "Table 3b row for pulse 1; R-0024 bundles all five pulse rows into one requirement.",
+  "_pass": "split"
+ },
+ {
+  "text": "Test pulse 2a: immunity test level +37 V for 12 V systems and +37 V for 24 V systems, 500 pulses; the ESA shall achieve FPSC I for functions related to immunity-related functions and FPSC III for functions not related to immunity-related functions.",
+  "source": {
+   "regulation": "UN R10",
+   "version": "7.2.0",
+   "page": 12,
+   "paragraph": "6.9.1"
+  },
+  "verbatim_quote": "|2a|+37 V|+37 V|500 pulses|I|III|",
+  "why_distinct": "Separate table row with its own test level, pulse count and pass criteria.",
+  "_pass": "split"
+ },
+ {
+  "text": "Test pulse 2b: immunity test level +10 V for 12 V systems and +20 V for 24 V systems, 10 pulses; the ESA shall achieve FPSC II for functions related to immunity-related functions and FPSC III for functions not related to immunity-related functions.",
+  "source": {
+   "regulation": "UN R10",
+   "version": "7.2.0",
+   "page": 12,
+   "paragraph": "6.9.1"
+  },
+  "verbatim_quote": "|2b|+10 V|+20 V|10 pulses|II|III|",
+  "why_distinct": "Separate table row with its own test level, pulse count and pass criteria.",
+  "_pass": "split"
+ },
+ {
+  "text": "Test pulse 3a: immunity test level -112 V for 12 V systems and -150 V for 24 V systems, test duration 1 h; the ESA shall achieve FPSC I for functions related to immunity-related functions and FPSC III for functions not related to immunity-related functions.",
+  "source": {
+   "regulation": "UN R10",
+   "version": "7.2.0",
+   "page": 12,
+   "paragraph": "6.9.1"
+  },
+  "verbatim_quote": "|3a|-112 V|-150 V|1 h|I|III|",
+  "why_distinct": "Separate table row with its own test level, duration and pass criteria.",
+  "_pass": "split"
+ },
+ {
+  "text": "Test pulse 3b: immunity test level +75 V for 12 V systems and +150 V for 24 V systems, test duration 1 h; the ESA shall achieve FPSC I for functions related to immunity-related functions and FPSC III for functions not related to immunity-related functions.",
+  "source": {
+   "regulation": "UN R10",
+   "version": "7.2.0",
+   "page": 12,
+   "paragraph": "6.9.1"
+  },
+  "verbatim_quote": "|3b|+75 V|+150 V|1 h|I|III|",
+  "why_distinct": "Separate table row with its own test level, duration and pass criteria.",
+  "_pass": "split"
+ },
+ {
+  "text": "A vehicle taken from series production shall not exhibit any degradation relating to the direct control of the vehicle that could be observed by the driver or other road users when in the state defined in Annex 6, paragraph 4., and subjected to a field strength, expressed in V/m, up to 80 per cent of the reference limits prescribed in paragraph 6.4.2.1. and, if applicable, paragraph 7.7.2.1.",
+  "source": {
+   "regulation": "UN R10",
+   "version": "7.2.0",
+   "page": 26,
+   "paragraph": "9.3.2"
+  },
+  "verbatim_quote": "is subjected to a field strength, expressed in Volts/m, up to 80 per cent of the reference limits prescribed in paragraph 6.4.2.1., and, if applicable, paragraph 7.7.2.1. for vehicles",
+  "why_distinct": "The existing requirement covers only ESAs (paragraph 6.8.2.1); the vehicle category, with its own reference limits (6.4.2.1/7.7.2.1), is a separate obligation.",
+  "_pass": "split"
+ },
+ {
+  "text": "Where applicable, an ESA taken from series production shall not exhibit any degradation relating to the direct control of the vehicle that could be observed by the driver or other road users when subjected to a field strength, expressed in V/m, up to 80 per cent of the reference limits prescribed in paragraph 7.18.2.1.",
+  "source": {
+   "regulation": "UN R10",
+   "version": "7.2.0",
+   "page": 26,
+   "paragraph": "9.3.2"
+  },
+  "verbatim_quote": "paragraph 6.8.2.1. and, if applicable, paragraph 7.18.2.1. for ESAs above",
+  "why_distinct": "The existing requirement references only the 6.8.2.1 limits; the conditionally applicable 7.18.2.1 reference limits for ESAs are a different test condition.",
+  "_pass": "split"
+ },
+ {
+  "text": "Where applicable (e.g. components/STUs connected to the power grid in charging mode), a component/STU taken from series production shall show no degradation of performance of its immunity-related functions up to the conducted disturbance immunity levels given in paragraph 7.19.1.",
+  "source": {
+   "regulation": "UN R10",
+   "version": "7.2.0",
+   "page": 26,
+   "paragraph": "9.3.3"
+  },
+  "verbatim_quote": "shows no degradation of performance of \"immunity related functions\" up to levels given in paragraph 6.9.1. and, if applicable, paragraph 7.19.1.",
+  "why_distinct": "Paragraph 7.19.1 covers a separate, conditional immunity limit set, distinct from 6.9.1. The existing R-0029 covers only 6.9.1.",
+  "_pass": "split"
+ },
+ {
+  "text": "Where applicable (e.g. components/STUs connected to the power grid in charging mode), a component/STU taken from series production shall not exceed the conducted emission levels given in paragraph 7.17.1.",
+  "source": {
+   "regulation": "UN R10",
+   "version": "7.2.0",
+   "page": 26,
+   "paragraph": "9.3.3"
+  },
+  "verbatim_quote": "does not exceed the levels given in paragraph 6.7.1. and, if applicable, paragraph 7.17.1. above",
+  "why_distinct": "Paragraph 7.17.1 is a separate, conditional emission limit set, distinct from 6.7.1. The existing R-0030 covers only 6.7.1.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbol identifying the daytime running lamp function in the approval marking shall be RL.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Daytime running lamp|RL|5.4.",
+  "why_distinct": "Separate table row for the daytime running lamp; not covered by R-0054.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbols identifying the front direction indicator lamp function in the approval marking shall be 1, 1a, 1b, 11, 11a, 11b or 11c.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Front direction indicator lamp|1, 1a, 1b, 11, 11a, 11b, 11c|5.6.",
+  "why_distinct": "Separate table row for the front direction indicator; not covered.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbol identifying the front end-outline marker lamp function in the approval marking shall be AM.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Front end-outline marker lamp|AM|5.1.",
+  "why_distinct": "Separate table row; not covered.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbol identifying the front position lamp for category L vehicles in the approval marking shall be MA.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Front position lamp for category L vehicle|MA|5.1.",
+  "why_distinct": "Separate table row for the category L front position lamp; not covered.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbol identifying the front position lamp function in the approval marking shall be A.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Front position lamp|A|5.1.",
+  "why_distinct": "Separate table row; not covered.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbol identifying the manoeuvring lamp function in the approval marking shall be ML.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Manoeuvring lamp|ML|5.10.",
+  "why_distinct": "Separate table row; not covered.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbol identifying the parking lamp (forward and rearward facing) in the approval marking shall be 77R.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Parking lamp (Forward and rearward facing)|77R|5.3.",
+  "why_distinct": "Separate table row; not covered.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbol identifying the rear direction indicator lamp (steady) in the approval marking shall be 2a.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Rear direction indicator lamp (steady)|2a|5.6.",
+  "why_distinct": "Separate table row; not covered.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbol identifying the rear direction indicator lamp (variable) in the approval marking shall be 2b.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Rear direction indicator lamp (variable)|2b|5.6.",
+  "why_distinct": "Separate table row; not covered.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbol identifying the rear direction indicator lamp for category L vehicles in the approval marking shall be 12.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Rear direction indicator lamp for category L vehicle|12|5.6.",
+  "why_distinct": "Separate table row; not covered.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbol identifying the rear end-outline marker lamp (steady) in the approval marking shall be RM1.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Rear end-outline marker lamp (steady)|RM1|5.2.",
+  "why_distinct": "Separate table row; not covered.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbol identifying the rear end-outline marker lamp (variable) in the approval marking shall be RM2.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Rear end-outline marker lamp (variable)|RM2|5.2.",
+  "why_distinct": "Separate table row; not covered.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbol identifying the rear fog lamp (steady) in the approval marking shall be F1.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Rear fog lamp (steady)|F1|5.9.",
+  "why_distinct": "Separate table row; not covered.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbol identifying the rear fog lamp (variable) in the approval marking shall be F2.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Rear fog lamp (variable)|F2|5.9.",
+  "why_distinct": "Separate table row; not covered.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbol identifying the rear position lamp for category L vehicles in the approval marking shall be MR.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Rear position lamp for category L vehicle|MR|5.2.",
+  "why_distinct": "Separate table row; not covered.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbol identifying the rear position lamp (steady) in the approval marking shall be R1.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Rear position lamp (steady)|R1|5.2.",
+  "why_distinct": "Bundled in R-0054 with other rows; needs its own requirement.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbol identifying the rear position lamp (variable) in the approval marking shall be R2.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Rear position lamp (variable)|R2|5.2.",
+  "why_distinct": "Bundled in R-0054 with other rows; needs its own requirement.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbol identifying the rear-registration plate illuminating lamp in the approval marking shall be L.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Rear-registration plate illuminating lamp|L|5.11.",
+  "why_distinct": "Separate table row; not covered.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbol identifying the rear-registration plate illuminating lamp for category L vehicles in the approval marking shall be LM1.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Rear-registration plate illuminating lamp for category L vehicle|LM1|5.11.",
+  "why_distinct": "Separate table row; not covered.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbol identifying the reversing lamp in the approval marking shall be AR (the letters A and R may be mingled).",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Reversing lamp (note: the letters A and R may be mingled)|AR|5.8.",
+  "why_distinct": "Bundled in R-0054 with other rows; needs its own requirement.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbols identifying the side direction indicator lamp in the approval marking shall be 5 or 6.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Side direction indicator lamp|5, 6|5.6.",
+  "why_distinct": "Separate table row; not covered.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbol identifying the side marker lamp for all vehicle categories in the approval marking shall be SM1.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Side marker lamp for all vehicle categories|SM1|5.7.",
+  "why_distinct": "Separate table row; not covered.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbol identifying the side marker lamp for M1 vehicles in the approval marking shall be SM2.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Side marker lamp for M1vehicles|SM2|5.7.",
+  "why_distinct": "Separate table row; not covered.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbol identifying the central high mounted stop lamp (steady) in the approval marking shall be S3.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Stop lamp (central high mounted) (steady)|S3|5.5.",
+  "why_distinct": "Separate table row; not covered.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbol identifying the central high mounted stop lamp (variable) in the approval marking shall be S4.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Stop lamp (central high mounted) (variable)|S4|5.5.",
+  "why_distinct": "Separate table row; not covered.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbol identifying the stop lamp for category L vehicles in the approval marking shall be MS.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Stop lamp for category L vehicle|MS|5.5.",
+  "why_distinct": "Separate table row; not covered.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbol identifying the stop lamp (steady) in the approval marking shall be S1.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Stop lamp (steady)|S1|5.5.",
+  "why_distinct": "Bundled in R-0054 with other rows; needs its own requirement.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbol identifying the stop lamp (variable) in the approval marking shall be S2.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Stop lamp (variable)|S2|5.5.",
+  "why_distinct": "Bundled in R-0054 with other rows; needs its own requirement.",
+  "_pass": "split"
+ },
+ {
+  "text": "The symbol identifying the reversing projector in the approval marking shall be RP.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 4,
+   "paragraph": "3.2.4"
+  },
+  "verbatim_quote": "Reversing projector|RP|5.12.",
+  "why_distinct": "Separate table row; not covered.",
+  "_pass": "split"
+ },
+ {
+  "text": "The mounting-side arrow shall be directed outwards from the vehicle in the case of direction indicators of categories 1, 1a, 1b, 2a, 2b, 11, 11a, 11b, 11c and 12.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 7,
+   "paragraph": "3.3.2.5.1.1"
+  },
+  "verbatim_quote": "(a) Direction indicators categories 1, 1a, 1b, 2a, 2b, 11, 11a, 11b, 11c and 12;",
+  "why_distinct": "List item (a) covers direction indicators, which the existing requirement does not mention at all.",
+  "_pass": "split"
+ },
+ {
+  "text": "The mounting-side arrow shall be directed outwards from the vehicle in the case of front position lamps and front or rear end-outline marker lamps.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 7,
+   "paragraph": "3.3.2.5.1.1"
+  },
+  "verbatim_quote": "(b) Front or rear position lamps, front or rear end-outline marker lamps;",
+  "why_distinct": "The existing requirement covers only rear position lamps from item (b). Front position lamps and end-outline marker lamps are not covered.",
+  "_pass": "split"
+ },
+ {
+  "text": "Lamps with an electronic light source control gear shall bear marking of the rated voltage(s) (i.e. 6V, 12V or 24V) or the range of voltage.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 8,
+   "paragraph": "3.3.3.4"
+  },
+  "verbatim_quote": "(a) An electronic light source control gear",
+  "why_distinct": "List item (a) is a separate triggering condition; the existing requirement is framed around non-replaceable light sources (d) and only mentions (a) parenthetically.",
+  "_pass": "split"
+ },
+ {
+  "text": "Lamps with a variable luminous intensity control shall bear marking of the rated voltage(s) (i.e. 6V, 12V or 24V) or the range of voltage.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 8,
+   "paragraph": "3.3.3.4"
+  },
+  "verbatim_quote": "(b) A variable luminous intensity control",
+  "why_distinct": "List item (b) is a separate triggering condition that needs its own dedicated requirement.",
+  "_pass": "split"
+ },
+ {
+  "text": "Lamps with a secondary operating mode shall bear marking of the rated voltage(s) (i.e. 6V, 12V or 24V) or the range of voltage.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 8,
+   "paragraph": "3.3.3.4"
+  },
+  "verbatim_quote": "(c) A secondary operating mode",
+  "why_distinct": "List item (c) is a separate triggering condition that needs its own dedicated requirement.",
+  "_pass": "split"
+ },
+ {
+  "text": "Direction indicator lamps shall not incorporate a logo.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 11,
+   "paragraph": "4.5.5"
+  },
+  "verbatim_quote": "(d) Stop lamps, direction indicator lamps, and reversing lamps shall not incorporate a logo.",
+  "why_distinct": "R-0086 covers only stop lamps and reversing lamps. The prohibition for direction indicator lamps, a separate lamp category in item (d), has no requirement of its own.",
+  "_pass": "split"
+ },
+ {
+  "text": "Where the tell-tale option is used for failure of any one light source in a single lamp containing more than one light source, a signal for activation of a tell-tale indicating failure shall be produced, as indicated in paragraphs 6.4.8., 6.7.8., 6.9.8, 6.10.8., 6.11.8., 6.12.8., 6.13.8. and 6.18.8. of UN Regulation No. 48.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 11,
+   "paragraph": "4.6.1.2"
+  },
+  "verbatim_quote": "(b) A signal for activation of a tell-tale indicating failure, as indicated in paragraphs 6.4.8., 6.7.8., 6.9.8, 6.10.8., 6.11.8., 6.12.8., 6.13.8. and 6.18.8. of UN Regulation No. 48, is produced.",
+  "why_distinct": "List item (b) is a distinct alternative obligation with its own criterion, a tell-tale signal per the listed R48 paragraphs. R-0087 bundles it with item (a) as an either/or, and R-0088 covers only item (a).",
+  "_pass": "split"
+ },
+ {
+  "text": "In case of failure of the variable intensity control of a rear end-outline marker lamp of category RM2 emitting more than the maximum value of category RM1, the steady luminous intensity requirements of category RM1 shall be fulfilled automatically.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 12,
+   "paragraph": "4.6.2"
+  },
+  "verbatim_quote": "(b) A rear end-outline marker lamp category RM2 emitting more than the maximum value of category RM1",
+  "why_distinct": "Separate list item (b) covering a different lamp category (RM2/RM1) not addressed by R-0089.",
+  "_pass": "split"
+ },
+ {
+  "text": "In case of failure of the variable intensity control of a stop lamp of category S2 emitting more than the maximum value of category S1, the steady luminous intensity requirements of category S1 shall be fulfilled automatically.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 12,
+   "paragraph": "4.6.2"
+  },
+  "verbatim_quote": "(c) A stop lamp category S2 emitting more than the maximum value of category S1",
+  "why_distinct": "Separate list item (c) covering stop lamp category S2/S1.",
+  "_pass": "split"
+ },
+ {
+  "text": "In case of failure of the variable intensity control of a stop lamp of category S4 emitting more than the maximum value of category S3, the steady luminous intensity requirements of category S3 shall be fulfilled automatically.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 12,
+   "paragraph": "4.6.2"
+  },
+  "verbatim_quote": "(d) A stop lamp category S4 emitting more than the maximum value of category S3",
+  "why_distinct": "Separate list item (d) covering stop lamp category S4/S3.",
+  "_pass": "split"
+ },
+ {
+  "text": "In case of failure of the variable intensity control of a direction indicator of category 2b emitting more than the maximum value of category 2a, the steady luminous intensity requirements of category 2a shall be fulfilled automatically.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 12,
+   "paragraph": "4.6.2"
+  },
+  "verbatim_quote": "(e) A direction indicator of category 2b emitting more than the maximum value of category 2a",
+  "why_distinct": "Separate list item (e) covering direction indicator category 2b/2a.",
+  "_pass": "split"
+ },
+ {
+  "text": "In case of failure of the variable intensity control of a rear fog lamp of category F2 emitting more than the maximum value of category F1, the steady luminous intensity requirements of category F1 shall be fulfilled automatically.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 12,
+   "paragraph": "4.6.2"
+  },
+  "verbatim_quote": "(f) A rear fog lamp of category F2 emitting more than the maximum value of category F1",
+  "why_distinct": "Separate list item (f) covering rear fog lamp category F2/F1.",
+  "_pass": "split"
+ },
+ {
+  "text": "If the interdependent lamp system providing the rear direction indicator function is partly mounted on the fixed component and partly mounted on a movable component, the interdependent lamp(s) specified by the applicant shall meet the geometric visibility, colorimetric and photometric requirements at all fixed positions of the movable component(s).",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 15,
+   "paragraph": "4.8.3.3"
+  },
+  "verbatim_quote": "If the interdependent lamp system providing the rear direction indicator function is partly mounted on the fixed component and partly mounted on a movable component, the interdependent lamp(s) specified by the applicant shall meet the geometric visibility, colorimetric and photometric requirement, at all fixed positions of the movable component(s).",
+  "why_distinct": "List item (b) imposes a separate obligation for the rear direction indicator function, which differs from item (a). No existing requirement covers it.",
+  "_pass": "split"
+ },
+ {
+  "text": "For an interdependent rear position lamp system partly mounted on a fixed and partly on a movable component, the inboard geometric visibility requirement is deemed satisfied only if the specified interdependent lamp(s) still conform to the photometric values prescribed in the field of light distribution for the approval of the device, at all fixed positions of the movable component(s).",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 15,
+   "paragraph": "4.8.3.3"
+  },
+  "verbatim_quote": "In this case, the inboard geometric visibility requirement is deemed to be satisfied if this (these) interdependent lamp(s) still conform to the photometric values prescribed in the field of light distribution for the approval of the device, at all fixed positions of the moveable component(s)",
+  "why_distinct": "This sets a separate inboard-direction criterion (photometric conformity across the field of light distribution). R-0107 covers only the outboard direction.",
+  "_pass": "split"
+ },
+ {
+  "text": "For variable intensity control systems depending only on daytime and night-time conditions, the control shall not generate signals causing luminous intensities exceeding the respective steady luminous intensity maximum specified in paragraph 5 for the specific lamp under night-time conditions.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 15,
+   "paragraph": "4.8.3.4.2"
+  },
+  "verbatim_quote": "(a) For systems depending only on daytime and night-time conditions: under night-time conditions;",
+  "why_distinct": "List item (a) imposes a distinct condition (night-time conditions) for day/night-only systems; the existing requirement bundles it with item (b).",
+  "_pass": "split"
+ },
+ {
+  "text": "For other variable intensity control systems (not depending only on daytime and night-time conditions), the control shall not generate signals causing luminous intensities exceeding the respective steady luminous intensity maximum specified in paragraph 5 for the specific lamp under standard conditions (good visibility, MOR > 2,000 m, and clean lens).",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 15,
+   "paragraph": "4.8.3.4.2"
+  },
+  "verbatim_quote": "(b) For other systems: under standard conditions2 . 2Good visibility (meteorological optical range MOR > 2,000 m",
+  "why_distinct": "List item (b) imposes a distinct condition (standard conditions) for other systems; the existing requirement bundles it with item (a).",
+  "_pass": "split"
+ },
+ {
+  "text": "If a rear end-outline marker lamp is reciprocally incorporated with a stop lamp (steady or variable luminous intensity), the ratio between the luminous intensities measured with both lamps turned on simultaneously and the intensity of the rear end-outline marker lamp turned on alone shall be at least 5:1 in the field delimited by ±5° V and ±10° H of the light distribution table. Where one or both lamps contain more than one light source and are considered a single lamp, the values shall be those obtained with all sources in operation.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 16,
+   "paragraph": "4.8.3.5"
+  },
+  "verbatim_quote": "If a rear position lamp and/or a rear end-outline marker lamp is reciprocally incorporated with a stop lamp producing either steady or variable luminous intensity, the ratio between the luminous intensities actually measured of the two lamps when turned on simultaneously at the intensity of the rear position lamp or end-outline marker lamp when turned on alone should be at least 5:1",
+  "why_distinct": "The existing requirement covers only the rear position lamp. The paragraph also explicitly applies the 5:1 ratio to the rear end-outline marker lamp, a different lamp category, and that obligation is not expressed anywhere.",
+  "_pass": "split"
+ },
+ {
+  "text": "For lamps equipped with non-replaceable light sources, the colorimetric characteristics shall be verified with the light sources present in the lamp, in accordance with the relevant subparagraphs of paragraph 4.8.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 16,
+   "paragraph": "4.9"
+  },
+  "verbatim_quote": "However, for lamps equipped with non-replaceable light sources, the colorimetric characteristics should be verified with the light sources present in the lamp, in accordance with relevant subparagraphs of paragraph 4.8.",
+  "why_distinct": "This is a separate condition for a specific lamp category (non-replaceable light sources), requiring verification with the installed light sources. Neither existing requirement covers this category.",
+  "_pass": "split"
+ },
+ {
+  "text": "In case of a steady stop lamp of category S3, the luminous intensity shall be at least 25 cd minimum and shall not exceed 110 cd as a single lamp or 55 cd for a lamp marked \"D\". The standard light distribution shall follow Figure A3-III. Within the angles of geometric visibility of Table A2-1 the intensity shall be at least 0.3 cd.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 19,
+   "paragraph": "5.5.1"
+  },
+  "verbatim_quote": "S3 (steady)|2.5∙10^1|1.10∙10^2|5.5∙10^1|Figure A3-III|Table A2- 1|3∙10^-1",
+  "why_distinct": "Separate table row for category S3 with its own intensity limits and light distribution figure, not covered by R-0120 or R-0121.",
+  "_pass": "split"
+ },
+ {
+  "text": "In case of a variable intensity stop lamp of category S4, the luminous intensity shall be at least 25 cd minimum and shall not exceed 160 cd as a single lamp or 80 cd for a lamp marked \"D\". The standard light distribution shall follow Figure A3-III. Within the angles of geometric visibility of Table A2-1 the intensity shall be at least 0.3 cd (day) and 0.07 cd (night).",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 19,
+   "paragraph": "5.5.1"
+  },
+  "verbatim_quote": "S4 (variable)|2.5∙10^1|1.60∙10^2|8.0∙10^1|Figure A3-III|Table A2- 1|3∙10^-1(day) 7∙10^-2(night)",
+  "why_distinct": "Separate table row for category S4 with distinct values, not covered by existing requirements.",
+  "_pass": "split"
+ },
+ {
+  "text": "In case of a steady stop lamp of category MS, the luminous intensity shall be at least 40 cd minimum and shall not exceed 260 cd as a single lamp or 130 cd for a lamp marked \"D\". The standard light distribution shall follow Figure A3-I. Within the angles of geometric visibility of Table A2-1 the intensity shall be at least 0.3 cd.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 19,
+   "paragraph": "5.5.1"
+  },
+  "verbatim_quote": "MS (steady)|4.0∙10^1|2.60∙10^2|1.30∙10^2|Figure A3-I|Table A2- 1|3∙10^-1",
+  "why_distinct": "Separate table row for category MS with a different minimum intensity (40 cd), not covered by existing requirements.",
+  "_pass": "split"
+ },
+ {
+  "text": "For a required minimum value of 7∙10^-1 cd throughout the fields specified in Annexes 2 and 3, the measured value of production lamps shall be at least 5∙10^-1 cd (20 per cent equivalent) and 3∙10^-1 cd (30 per cent equivalent), per Table 12.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 27,
+   "paragraph": "6.1.3"
+  },
+  "verbatim_quote": "|7∙10^-1|5∙10^-1|3∙10^-1|",
+  "why_distinct": "Table row 1 of Table 12; existing R-0130 bundles all five rows into one requirement.",
+  "_pass": "split"
+ },
+ {
+  "text": "For a required minimum value of 6∙10^-1 cd throughout the fields specified in Annexes 2 and 3, the measured value of production lamps shall be at least 4∙10^-1 cd (20 per cent equivalent) and 2∙10^-1 cd (30 per cent equivalent), per Table 12.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 27,
+   "paragraph": "6.1.3"
+  },
+  "verbatim_quote": "|6∙10^-1|4∙10^-1|2∙10^-1|",
+  "why_distinct": "Table row 2 of Table 12, a distinct minimum-value condition bundled in R-0130.",
+  "_pass": "split"
+ },
+ {
+  "text": "For a required minimum value of 3∙10^-1 cd throughout the fields specified in Annexes 2 and 3, the measured value of production lamps shall be at least 2∙10^-1 cd (20 per cent equivalent) and 1∙10^-1 cd (30 per cent equivalent), per Table 12.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 27,
+   "paragraph": "6.1.3"
+  },
+  "verbatim_quote": "|3∙10^-1|2∙10^-1|1∙10^-1|",
+  "why_distinct": "Table row 3 of Table 12, a distinct minimum-value condition bundled in R-0130.",
+  "_pass": "split"
+ },
+ {
+  "text": "For a required minimum value of 7∙10^-2 cd throughout the fields specified in Annexes 2 and 3, the measured value of production lamps shall be at least 5∙10^-2 cd (20 per cent equivalent) and 3∙10^-2 cd (30 per cent equivalent), per Table 12.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 27,
+   "paragraph": "6.1.3"
+  },
+  "verbatim_quote": "|7∙10^-2|5∙10^-2|3∙10^-2|",
+  "why_distinct": "Table row 4 of Table 12, a distinct minimum-value condition bundled in R-0130.",
+  "_pass": "split"
+ },
+ {
+  "text": "For a required minimum value of 5∙10^-2 cd throughout the fields specified in Annexes 2 and 3, the measured value of production lamps shall be at least 3∙10^-2 cd (20 per cent equivalent) and 2∙10^-2 cd (30 per cent equivalent), per Table 12.",
+  "source": {
+   "regulation": "UN R148",
+   "version": "1.6.0",
+   "page": 27,
+   "paragraph": "6.1.3"
+  },
+  "verbatim_quote": "|5∙10^-2|3∙10^-2|2∙10^-2|",
+  "why_distinct": "Table row 5 of Table 12, a distinct minimum-value condition bundled in R-0130.",
+  "_pass": "split"
+ },
+ {
+  "text": "For a retro-reflector for trailers of Class IIIA (independent), the minimum value of 'a' for the approval marking is 5 mm.",
+  "source": {
+   "regulation": "UN R150",
+   "version": "1.2.1",
+   "page": 5,
+   "paragraph": "3.2.5"
+  },
+  "verbatim_quote": "Retro-reflector for trailers (independent)|IIIA|5|5.1.",
+  "why_distinct": "Separate table row for a different device class (IIIA).",
+  "_pass": "split"
+ },
+ {
+  "text": "For a retro-reflector for trailers of Class IIIB (combined with other signal lamps which are not watertight), the minimum value of 'a' for the approval marking is 5 mm.",
+  "source": {
+   "regulation": "UN R150",
+   "version": "1.2.1",
+   "page": 5,
+   "paragraph": "3.2.5"
+  },
+  "verbatim_quote": "Retro-reflector for trailers (combined with other signal lamps which are not watertight)|IIIB|5|5.1.",
+  "why_distinct": "Separate table row for a different device class (IIIB).",
+  "_pass": "split"
+ },
+ {
+  "text": "For a wide-angle retro-reflector of Class IVA, the minimum value of 'a' for the approval marking is 5 mm.",
+  "source": {
+   "regulation": "UN R150",
+   "version": "1.2.1",
+   "page": 5,
+   "paragraph": "3.2.5"
+  },
+  "verbatim_quote": "Wide-angle retro reflector|IVA|5|5.1.",
+  "why_distinct": "Separate table row for a different device class (IVA).",
+  "_pass": "split"
+ },
+ {
+  "text": "For retro-reflective marking material of Class C (conspicuity marking, material for contour/strip marking), the minimum value of 'a' for the approval marking is 8 mm.",
+  "source": {
+   "regulation": "UN R150",
+   "version": "1.2.1",
+   "page": 5,
+   "paragraph": "3.2.5"
+  },
+  "verbatim_quote": "Retro-reflective marking material (Conspicuity marking, material for contour/strip marking)|C|8|5.2.",
+  "why_distinct": "Separate table row for Class C with a different 'a' value.",
+  "_pass": "split"
+ },
+ {
+  "text": "For retro-reflective marking material of Class D (distinctive markings/graphics intended for a limited area), the minimum value of 'a' for the approval marking is 8 mm.",
+  "source": {
+   "regulation": "UN R150",
+   "version": "1.2.1",
+   "page": 5,
+   "paragraph": "3.2.5"
+  },
+  "verbatim_quote": "Retro-reflective marking material (Conspicuity marking, material for distinctive markings/graphics intended for a limited area)|D|8|5.2.",
+  "why_distinct": "Separate table row for Class D.",
+  "_pass": "split"
+ },
+ {
+  "text": "For retro-reflective marking material of Class E (distinctive markings/graphics intended for an extended area), the minimum value of 'a' for the approval marking is 8 mm.",
+  "source": {
+   "regulation": "UN R150",
+   "version": "1.2.1",
+   "page": 5,
+   "paragraph": "3.2.5"
+  },
+  "verbatim_quote": "Retro-reflective marking material (Conspicuity marking, material for distinctive markings/graphics intended for an extended area)|E|8|5.2.",
+  "why_distinct": "Separate table row for Class E.",
+  "_pass": "split"
+ },
+ {
+  "text": "For retro-reflective marking material of Class D/E (base or background for fully coloured logos and markings of class E fulfilling class D requirements), the minimum value of 'a' for the approval marking is 8 mm.",
+  "source": {
+   "regulation": "UN R150",
+   "version": "1.2.1",
+   "page": 5,
+   "paragraph": "3.2.5"
+  },
+  "verbatim_quote": "materials for distinctive markings or graphics as base or background in printing process for fully coloured logos and markings of class E in use which fulfil the requirements of class D materials)|D/E|8|5.2.",
+  "why_distinct": "Separate table row for Class D/E.",
+  "_pass": "split"
+ },
+ {
+  "text": "For retro-reflective marking material for extremities marking of Class F, the minimum value of 'a' for the approval marking is 8 mm.",
+  "source": {
+   "regulation": "UN R150",
+   "version": "1.2.1",
+   "page": 5,
+   "paragraph": "3.2.5"
+  },
+  "verbatim_quote": "Retro-reflective marking material (material for extremities marking of class F)|F|8|5.2.",
+  "why_distinct": "Separate table row for Class F.",
+  "_pass": "split"
+ },
+ {
+  "text": "For retro-reflective marking plates for long or heavy vehicles comprising retro-reflective and fluorescent materials (Class 1 or 2, symbol RF), the minimum value of 'a' for the approval marking is 5 mm.",
+  "source": {
+   "regulation": "UN R150",
+   "version": "1.2.1",
+   "page": 5,
+   "paragraph": "3.2.5"
+  },
+  "verbatim_quote": "Retro-reflective marking plates for long or heavy vehicles (comprising retro-reflective and fluorescent materials) Marking plate of class 1 or class 2|RF|5|5.2.",
+  "why_distinct": "Separate table row for RF plates for long/heavy vehicles.",
+  "_pass": "split"
+ },
+ {
+  "text": "For retro-reflective marking plates for long or heavy vehicles comprising retro-reflective only materials (Class 3, 4 or 5, symbol RR), the minimum value of 'a' for the approval marking is 5 mm.",
+  "source": {
+   "regulation": "UN R150",
+   "version": "1.2.1",
+   "page": 5,
+   "paragraph": "3.2.5"
+  },
+  "verbatim_quote": "Retro-reflective marking plates for long or heavy vehicles (comprising retro-reflective only materials) Marking plate of class 3, class 4 or class 5|RR|5|5.2.",
+  "why_distinct": "Separate table row for RR plates for long/heavy vehicles.",
+  "_pass": "split"
+ },
+ {
+  "text": "For retro-reflective marking plates for slow moving vehicles comprising retro-reflective and fluorescent materials (Class 1, symbol RF), the minimum value of 'a' for the approval marking is 5 mm.",
+  "source": {
+   "regulation": "UN R150",
+   "version": "1.2.1",
+   "page": 5,
+   "paragraph": "3.2.5"
+  },
+  "verbatim_quote": "Retro-reflective marking plates for slow moving vehicles (comprising retro-reflective and fluorescent materials) Marking plate of class 1|RF|5|5.2.",
+  "why_distinct": "Separate table row for RF plates for slow moving vehicles.",
+  "_pass": "split"
+ },
+ {
+  "text": "For retro-reflective marking plates for slow moving vehicles comprising retro-reflective only materials (Class 2, symbol RR), the minimum value of 'a' for the approval marking is 5 mm.",
+  "source": {
+   "regulation": "UN R150",
+   "version": "1.2.1",
+   "page": 5,
+   "paragraph": "3.2.5"
+  },
+  "verbatim_quote": "Retro-reflective marking plates for slow moving vehicles (comprising retro-reflective only materials) - Marking plate of class 2|RR|5|5.2.",
+  "why_distinct": "Separate table row for RR plates for slow moving vehicles.",
+  "_pass": "split"
+ },
+ {
+  "text": "For an Advance Warning Triangle Type 1 (symbol WT1), the minimum value of 'a' for the approval marking is 8 mm.",
+  "source": {
+   "regulation": "UN R150",
+   "version": "1.2.1",
+   "page": 5,
+   "paragraph": "3.2.5"
+  },
+  "verbatim_quote": "Advance Warning Triangle (Type 1)|WT1|8|5.3.",
+  "why_distinct": "Separate table row for WT1.",
+  "_pass": "split"
+ },
+ {
+  "text": "For an Advance Warning Triangle Type 2 (symbol WT2), the minimum value of 'a' for the approval marking is 8 mm.",
+  "source": {
+   "regulation": "UN R150",
+   "version": "1.2.1",
+   "page": 5,
+   "paragraph": "3.2.5"
+  },
+  "verbatim_quote": "Advance Warning Triangle (Type 2)|WT2|8|5.3.",
+  "why_distinct": "Separate table row for WT2.",
+  "_pass": "split"
+ },
+ {
+  "text": "The Class IIIA, IIIB or IVA retro-reflector shall bear the word 'TOP' inscribed horizontally on the highest part of the illuminating surface, if such an indication is necessary to determine without ambiguity the angle or angles of rotation prescribed by the manufacturer.",
+  "source": {
+   "regulation": "UN R150",
+   "version": "1.2.1",
+   "page": 8,
+   "paragraph": "3.3.4.2"
+  },
+  "verbatim_quote": "in case of a retro-reflector of Class IA, IIIA, IB, IIIB or IVA, the word “TOP” inscribed horizontally on the highest part of the illuminating surface",
+  "why_distinct": "R-0167 covers only Classes IA and IB; Classes IIIA, IIIB and IVA named in 3.3.4.2.1 are not covered.",
+  "_pass": "split"
+ },
+ {
+  "text": "Retro-reflective marking material of Class C, D, E or F whose retro-reflective system is not omni-rotational shall bear an orientation mark 'TOP'.",
+  "source": {
+   "regulation": "UN R150",
+   "version": "1.2.1",
+   "page": 8,
+   "paragraph": "3.3.4.2"
+  },
+  "verbatim_quote": "in case of retro-reflective marking material of Class C, D, E or F an orientation mark \"TOP\" on any marking material whose retro-reflective system is not omni-rotational.",
+  "why_distinct": "Separate list item 3.3.4.2.2 for a different device category (marking material) with its own condition (not omni-rotational).",
+  "_pass": "split"
+ },
+ {
+  "text": "Retro-reflective marking plates of Class 1, 2, 3, 4 or 5 whose retro-reflective system is not omni-rotational shall bear the word 'TOP' inscribed horizontally on the part of the plate which is intended to be the highest part of the plate when mounted on the vehicle.",
+  "source": {
+   "regulation": "UN R150",
+   "version": "1.2.1",
+   "page": 8,
+   "paragraph": "3.3.4.2"
+  },
+  "verbatim_quote": "in case of retro-reflective marking plates of Class 1, 2, 3, 4 or 5, on the plates whose retro-reflective system is not omni-rotational, the word \"TOP\" inscribed horizontally on the part of the plates which is intended to be the highest part of the plate when mounted on the vehicle.",
+  "why_distinct": "Separate list item 3.3.4.2.3 for marking plates with a distinct location and condition for the TOP inscription.",
+  "_pass": "split"
+ },
+ {
+  "text": "The two samples of the first group shall be subjected successively to the water penetration test (Part 2 of Annex 6) and then, if satisfactory, to the tests for resistance to fuels and lubricants (Parts 1 and 2 of Annex 7), and shall meet the requirements of these tests.",
+  "source": {
+   "regulation": "UN R150",
+   "version": "1.2.1",
+   "page": 11,
+   "paragraph": "5.1.3.1"
+  },
+  "verbatim_quote": "The two samples shall be subjected successively to the water penetration test (Part 2 of Annex 6) and then, if this test is satisfactory, to the tests for resistance to fuels and lubricants (Parts 1 and 2 of Annex 7).",
+  "why_distinct": "Table row 'First group' defines a distinct test condition (water penetration plus fuel/lubricant resistance) not covered by R-0185.",
+  "_pass": "split"
+ },
+ {
+  "text": "The two samples of the second group shall, if necessary, be subjected to the corrosion test in Part 4 of Annex 6 and then to the abrasive-strength test of the rear face in Part 5 of Annex 6, and shall meet the requirements of these tests.",
+  "source": {
+   "regulation": "UN R150",
+   "version": "1.2.1",
+   "page": 11,
+   "paragraph": "5.1.3.1"
+  },
+  "verbatim_quote": "The two samples shall, if necessary, be subjected to the corrosion test in Part 4 of Annex 6, and then to the abrasive-strength test of the rear face of the retro-reflective device in Part 5 of Annex 6.",
+  "why_distinct": "Table row 'Second group' defines a distinct test condition (corrosion and rear-face abrasion) not covered by R-0185.",
+  "_pass": "split"
+ },
+ {
+  "text": "The two samples of the third group shall be subjected to the test for stability in time of the optical properties of the retro-reflective device in Part 3 of Annex 4 and shall meet its requirements.",
+  "source": {
+   "regulation": "UN R150",
+   "version": "1.2.1",
+   "page": 11,
+   "paragraph": "5.1.3.1"
+  },
+  "verbatim_quote": "The two samples shall be subjected to the test for stability in time of the optical properties of retro-reflective device in Part 3 of Annex 4.",
+  "why_distinct": "Table row 'Third group' defines a distinct test condition (stability in time of optical properties) not covered by R-0185.",
+  "_pass": "split"
+ },
+ {
+  "text": "The two samples of the fourth group shall be subjected to the resistance to weathering test (Part 6 of Annex 6) and shall meet its requirements.",
+  "source": {
+   "regulation": "UN R150",
+   "version": "1.2.1",
+   "page": 11,
+   "paragraph": "5.1.3.1"
+  },
+  "verbatim_quote": "The two samples shall be subjected to the resistance to weathering test (Part 6 of Annex 6).",
+  "why_distinct": "Table row 'Fourth group' defines a distinct test condition (weathering resistance) not covered by R-0185.",
+  "_pass": "split"
+ },
+ {
+  "text": "The two retro-reflectors giving the minimum and maximum RI values after the heat resistance test shall be fully tested according to paragraph 5.1.4. and shall comply with its requirements.",
+  "source": {
+   "regulation": "UN R150",
+   "version": "1.2.1",
+   "page": 11,
+   "paragraph": "5.1.3.1"
+  },
+  "verbatim_quote": "The two retro-reflectors giving the minimum and maximum values shall then be fully tested as shown in paragraph 5.1.4.",
+  "why_distinct": "Full photometric testing of the min/max samples is a separate test condition from the single-angle check after heat resistance in R-0185.",
+  "_pass": "split"
+ },
+ {
+  "text": "When measured as described in paragraph 3 of Part 1 of Annex 4, the RI values of the red Class IIIA/IIIB retro-reflector shall be equal to or greater than those in Table 3 (mcd/lx), vertical β1 / horizontal β2: at angle of divergence 20': 450 at 0°/0°; 200 at ±10°/0°; 150 at ±5°/±20°; at angle of divergence 1°30': 12 at 0°/0°; 8 at ±10°/0°; 8 at ±5°/±20°.",
+  "source": {
+   "regulation": "UN R150",
+   "version": "1.2.1",
+   "page": 12,
+   "paragraph": "5.1.4.4.1"
+  },
+  "verbatim_quote": "4.50∙10^2|2.00∙10^2|1.50∙10^2",
+  "why_distinct": "Separate table rows for device class IIIA/IIIB (red) with different minimum RI values; R-0193 covers only Class IA/IB.",
+  "_pass": "split"
+ },
+ {
+  "text": "When measured as described in paragraph 3 of Part 1 of Annex 4, the RI values of the red Class IV retro-reflector shall be equal to or greater than those in Table 3 (mcd/lx), vertical β1 / horizontal β2: at angle of divergence 20': 450 at 0°/0°; 300 at ±10°/0°; 135 at 0°/±30°; 115 at 0°/±40°; 100 at 0°/±50°; at angle of divergence 1°30': 9 at 0°/0°; 6 at ±10°/0°; 4 at 0°/±30°; 4 at 0°/±40°; 4 at 0°/±50°.",
+  "source": {
+   "regulation": "UN R150",
+   "version": "1.2.1",
+   "page": 12,
+   "paragraph": "5.1.4.4.1"
+  },
+  "verbatim_quote": "4.50∙10^2|3.00∙10^2|--|1.35∙10^2|1.15∙10^2|1.00∙10^2",
+  "why_distinct": "Separate table rows for device class IV (red) with different illumination angles and minimum RI values; not covered by R-0193.",
+  "_pass": "split"
+ },
+ {
+  "text": "The results obtained from both the left and right headlamps under all the load conditions specified in Annex 5 shall be within the limits set out in paragraph 5.5 of Annex 6.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 110,
+   "paragraph": "5.1"
+  },
+  "verbatim_quote": "The results obtained from both left and right headlamps under all the load conditions specified in Annex 5, shall be within the limits set out in paragraph 5.5. below.",
+  "why_distinct": "The existing requirements cover rear combination lamp fitting and maladjustment, not the pass/fail criterion for dipped-beam or vehicle inclination variation of the left and right headlamps under the Annex 5 load conditions.",
+  "_pass": "split"
+ },
+ {
+  "text": "The colour of the light emitted by the main-beam headlamp shall be white.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 23,
+   "paragraph": "5.15"
+  },
+  "verbatim_quote": "Main-beam headlamp:|White",
+  "why_distinct": "Separate table row for a different lamp; not covered by R-0268.",
+  "_pass": "split"
+ },
+ {
+  "text": "The colour of the light emitted by the dipped-beam headlamp shall be white.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 23,
+   "paragraph": "5.15"
+  },
+  "verbatim_quote": "Dipped-beam headlamp:|White",
+  "why_distinct": "Separate table row for a different lamp.",
+  "_pass": "split"
+ },
+ {
+  "text": "The colour of the light emitted by the front fog lamp shall be white or selective yellow.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 23,
+   "paragraph": "5.15"
+  },
+  "verbatim_quote": "Front fog lamp:|White or selective yellow",
+  "why_distinct": "Separate table row with a distinct permitted colour set.",
+  "_pass": "split"
+ },
+ {
+  "text": "The colour of the light emitted by the direction-indicator lamp shall be amber.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 23,
+   "paragraph": "5.15"
+  },
+  "verbatim_quote": "Direction-indicator lamp:|Amber",
+  "why_distinct": "Separate table row for a different lamp.",
+  "_pass": "split"
+ },
+ {
+  "text": "The colour of the light emitted by the hazard warning signal shall be amber.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 23,
+   "paragraph": "5.15"
+  },
+  "verbatim_quote": "Hazard warning signal:|Amber",
+  "why_distinct": "Separate table row for a different signal.",
+  "_pass": "split"
+ },
+ {
+  "text": "The colour of the light emitted by the emergency stop signal shall be amber or red.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 23,
+   "paragraph": "5.15"
+  },
+  "verbatim_quote": "Emergency stop signal :|Amber or red",
+  "why_distinct": "Separate table row with a distinct colour option.",
+  "_pass": "split"
+ },
+ {
+  "text": "The colour of the light emitted by the rear-end collision alert signal shall be amber.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 23,
+   "paragraph": "5.15"
+  },
+  "verbatim_quote": "Rear-end collision alert signal:|Amber",
+  "why_distinct": "Separate table row for a different signal.",
+  "_pass": "split"
+ },
+ {
+  "text": "The colour of the light emitted by the rear registration plate lamp shall be white.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 23,
+   "paragraph": "5.15"
+  },
+  "verbatim_quote": "Rear registration plate lamp:|White",
+  "why_distinct": "Separate table row for a different lamp.",
+  "_pass": "split"
+ },
+ {
+  "text": "The colour of the light emitted by the front position lamp shall be white.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 23,
+   "paragraph": "5.15"
+  },
+  "verbatim_quote": "Front position lamp:|White",
+  "why_distinct": "Separate table row for a different lamp.",
+  "_pass": "split"
+ },
+ {
+  "text": "The colour of the light emitted by the rear fog lamp shall be red.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 23,
+   "paragraph": "5.15"
+  },
+  "verbatim_quote": "Rear fog lamp:|Red",
+  "why_distinct": "Separate table row for a different lamp.",
+  "_pass": "split"
+ },
+ {
+  "text": "The colour of the light emitted by the parking lamp shall be white in front, red at the rear, and amber if reciprocally incorporated in the side direction-indicator lamps or in the side-marker lamps.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 23,
+   "paragraph": "5.15"
+  },
+  "verbatim_quote": "Parking lamp:|White in front, red at the rear, amber if reciprocally incorporated in the side direction-indicator lamps or in the side-marker lamps.",
+  "why_distinct": "Separate table row with position-dependent colours.",
+  "_pass": "split"
+ },
+ {
+  "text": "The colour of the light emitted by the side-marker lamp shall be amber; the rearmost side-marker lamp may be red if grouped, combined or reciprocally incorporated with the rear position lamp, rear end-outline marker lamp, rear fog lamp, stop lamp, or grouped or sharing light emitting surface with the rear retro-reflector.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 23,
+   "paragraph": "5.15"
+  },
+  "verbatim_quote": "Side-marker lamp:|Amber; however the rearmost side- marker lamp can be red if it is grouped or combined or reciprocally incorporated with the rear position lamp, the rear end-outline marker lamp, the rear fog lamp, the stop lamp or is grouped or has part of the light emitting surface in common with the rear retro-reflector.",
+  "why_distinct": "Separate table row with its own conditional colour rule.",
+  "_pass": "split"
+ },
+ {
+  "text": "The colour of the light emitted by the end-outline marker lamp shall be white in front and red at the rear.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 23,
+   "paragraph": "5.15"
+  },
+  "verbatim_quote": "End-outline marker lamp:|White in front, red at the rear",
+  "why_distinct": "Separate table row for a different lamp.",
+  "_pass": "split"
+ },
+ {
+  "text": "The colour of the light emitted by the daytime running lamp shall be white.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 23,
+   "paragraph": "5.15"
+  },
+  "verbatim_quote": "Daytime running lamp:|White",
+  "why_distinct": "Separate table row for a different lamp.",
+  "_pass": "split"
+ },
+ {
+  "text": "The colour of the triangular rear retro-reflector shall be red.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 23,
+   "paragraph": "5.15"
+  },
+  "verbatim_quote": "Rear retro-reflector, triangular:|Red",
+  "why_distinct": "Separate table row; R-0268 covers only the non-triangular rear retro-reflector.",
+  "_pass": "split"
+ },
+ {
+  "text": "The colour of the non-triangular front retro-reflector shall be identical to incident light (white or colourless).",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 23,
+   "paragraph": "5.15"
+  },
+  "verbatim_quote": "Front retro-reflector, non- triangular:|Identical to incident light^8",
+  "why_distinct": "Separate table row for a different device.",
+  "_pass": "split"
+ },
+ {
+  "text": "The colour of the non-triangular side retro-reflector shall be amber; the rearmost side retro-reflector may be red if grouped or sharing light emitting surface with the rear position lamp, rear end-outline marker lamp, rear fog lamp, stop lamp, red rearmost side-marker lamp or non-triangular rear retro-reflector.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 23,
+   "paragraph": "5.15"
+  },
+  "verbatim_quote": "Side retro-reflector, non- triangular:|Amber; however the rearmost side retro-reflector can be red if it is grouped or has part of the light emitting surface in common with the rear position lamp, the rear end outline marker lamp, the rear fog lamp, the stop-lamp, the red rearmost side-marker lamp or the rear retro-reflector, non- triangular.",
+  "why_distinct": "Separate table row with its own conditional colour rule.",
+  "_pass": "split"
+ },
+ {
+  "text": "The colour of the light emitted by the cornering lamp shall be white.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 23,
+   "paragraph": "5.15"
+  },
+  "verbatim_quote": "Cornering lamp:|White",
+  "why_distinct": "Separate table row for a different lamp.",
+  "_pass": "split"
+ },
+ {
+  "text": "The colour of conspicuity marking to the front shall be white.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 23,
+   "paragraph": "5.15"
+  },
+  "verbatim_quote": "Conspicuity marking:|White to the front;",
+  "why_distinct": "Separate table row and distinct direction (front).",
+  "_pass": "split"
+ },
+ {
+  "text": "The colour of conspicuity marking to the side shall be white or yellow.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 23,
+   "paragraph": "5.15"
+  },
+  "verbatim_quote": "White or yellow to the side;",
+  "why_distinct": "Distinct direction (side) with different colour options.",
+  "_pass": "split"
+ },
+ {
+  "text": "The colour of conspicuity marking to the rear shall be red or yellow.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 23,
+   "paragraph": "5.15"
+  },
+  "verbatim_quote": "Red or yellow to the rear.^9",
+  "why_distinct": "Distinct direction (rear) with different colour options.",
+  "_pass": "split"
+ },
+ {
+  "text": "The colour of the light emitted by adaptive front-lighting systems (AFS) shall be white.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 23,
+   "paragraph": "5.15"
+  },
+  "verbatim_quote": "Adaptive front- lighting systems (AFS):|White",
+  "why_distinct": "Separate table row for a different system.",
+  "_pass": "split"
+ },
+ {
+  "text": "The colour of the light emitted by the exterior courtesy lamp shall be white and, in addition, in accordance with the individual specifications applicable to the specific lamp used.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 23,
+   "paragraph": "5.15"
+  },
+  "verbatim_quote": "Exterior courtesy lamp:|White",
+  "why_distinct": "Separate table row for a different lamp.",
+  "_pass": "split"
+ },
+ {
+  "text": "The colour of the light emitted by the manoeuvring lamp shall be white.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 23,
+   "paragraph": "5.15"
+  },
+  "verbatim_quote": "Manoeuvring lamp:|White",
+  "why_distinct": "Separate table row for a different lamp.",
+  "_pass": "split"
+ },
+ {
+  "text": "The colour of the answer-back signal shall be in accordance with the individual specifications applicable to the specific lamp used for the answer-back signal.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 23,
+   "paragraph": "5.15"
+  },
+  "verbatim_quote": "Answer-back signal:|In accordance with the individual specifications applicable to the specific lamp used for the answer- back signal.",
+  "why_distinct": "Separate table row for a different signal.",
+  "_pass": "split"
+ },
+ {
+  "text": "The colour of the reversing projection shall be white.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 23,
+   "paragraph": "5.15"
+  },
+  "verbatim_quote": "Reversing|White|\nprojection:",
+  "why_distinct": "Separate table row for a different device.",
+  "_pass": "split"
+ },
+ {
+  "text": "Where the complete interdependent lamp system is mounted on the moving component(s), additional lamps for these functions may be switched ON when the movable component is in any fixed open position. These additional lamps shall satisfy all the position, geometric visibility, colorimetric and photometric requirements applicable to the lamps installed on the movable component.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 25,
+   "paragraph": "5.18.4"
+  },
+  "verbatim_quote": "However, additional lamps for the above functions may be switched ON, when the movable component is in any fixed open position, provided that these additional lamps satisfy all the position, geometric visibility, colorimetric and photometric requirements applicable to the lamps installed on the movable component",
+  "why_distinct": "R-0330 covers only the base requirement of option (a). The conditional allowance for additional lamps, with its own compliance criteria, is not covered.",
+  "_pass": "split"
+ },
+ {
+  "text": "Where direction indicator lamps form an interdependent lamp system mounted partly on the fixed component and partly on a movable component, the interdependent lamp(s) specified by the Applicant during device approval shall meet all the position, geometric visibility, photometric and colorimetric requirements at all fixed positions of the movable component(s).",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 25,
+   "paragraph": "5.18.4"
+  },
+  "verbatim_quote": "For direction indicator lamps, the interdependent lamp(s) specified by the Applicant during the device approval procedure shall meet all the position, geometric visibility, photometric and colorimetric requirements at all fixed positions of the movable component(s).",
+  "why_distinct": "Direction indicator lamps are a separate category. They must meet the full geometric visibility requirement rather than outward visibility only, with no photometric deeming for inward visibility. No existing requirement covers them.",
+  "_pass": "split"
+ },
+ {
+  "text": "For direction indicator lamps in a partly fixed/partly movable interdependent lamp system, additional lamps may be switched ON to fulfil or complete the geometric visibility angle when the movable component is in any fixed open position. These additional lamps shall satisfy all the position, photometric and colorimetric requirements applicable to the direction indicator lamps installed on the movable component.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 25,
+   "paragraph": "5.18.4"
+  },
+  "verbatim_quote": "This does not apply where, to fulfil or complete the geometric visibility angle, additional lamps are switched ON when the movable component is in any fixed open position, provided that these additional lamps satisfy all the position, photometric and colorimetric requirements applicable to the direction indicator lamps installed on the movable component.",
+  "why_distinct": "This is a distinct exception for direction indicators that sets its own conditions for additional lamps. None of the existing requirements address it.",
+  "_pass": "split"
+ },
+ {
+  "text": "For dipped-beam headlamps and front fog lamps on a movable component, the return-to-position requirement is satisfied if, after the movable component is moved and returned to the normal position 10 times, no angular inclination value of the lamp relative to its support, measured after each operation, differs by more than 0.15 per cent from the average of the 10 measured values.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 25,
+   "paragraph": "5.20"
+  },
+  "verbatim_quote": "In the case of dipped-beam headlamps and front fog lamps, this requirement shall be considered satisfied if, when the movable components are moved and returned to the normal position 10 times, no value of the angular inclination of these lamps, relative to its support, measured after each operation of the movable component, differs by more than 0.15 per cent from the average of the 10 measured values.",
+  "why_distinct": "Specific quantitative pass/fail criterion (0.15% deviation over 10 cycles) for dipped-beam headlamps and front fog lamps, not expressed in R-0273's general return requirement.",
+  "_pass": "split"
+ },
+ {
+  "text": "If the 0.15 per cent deviation is exceeded, each inclination limit specified in paragraph 6.2.6.1.1. shall be modified by the excess so as to decrease the allowed range of inclinations when checking the vehicle according to Annex 6.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 25,
+   "paragraph": "5.20"
+  },
+  "verbatim_quote": "If this value is exceeded each limit specified in paragraph 6.2.6.1.1. shall then be modified by this excess to decrease the allowed range of inclinations when checking the vehicle according to Annex 6.",
+  "why_distinct": "Separate consequential obligation (tightening of inclination limits by the excess) applying when the 0.15% criterion is exceeded; not covered by any existing requirement.",
+  "_pass": "split"
+ },
+ {
+  "text": "In case rear direction indicator lamps of category 2b have variable luminous intensity control and are combined, grouped or reciprocally incorporated with rear position lamps (R2) and/or stop lamps (S2), the intensity of all these lamps shall vary all together in the same manner and in a similar proportion.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 26,
+   "paragraph": "5.26"
+  },
+  "verbatim_quote": "Rear direction indicator lamps of category 2b, rear position lamps of category R2 and stop lamps of category S2 with variable luminous intensity control ... (a) The intensity of the all lamps mentioned above, when combined, grouped or reciprocally incorporated, vary all together in the same manner and in a similar proportion.",
+  "why_distinct": "R-0279 covers only R2 and S2 lamps; the paragraph also explicitly applies obligation (a) to category 2b rear direction indicator lamps, which no existing requirement mentions.",
+  "_pass": "split"
+ },
+ {
+  "text": "Any method used to measure variations of inclination shall give readings accurate to within ±0.2 mrad (±0.02 per cent inclination).",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 111,
+   "paragraph": "5.3"
+  },
+  "verbatim_quote": "Any method may be used to measure variations of inclination provided that the readings are accurate to within ±0.2 mrad (±0.02 per cent inclination).",
+  "why_distinct": "Neither existing requirement covers this paragraph's only obligation, the ±0.2 mrad accuracy limit for inclination measurements. Both extracted requirements concern lamp reference-axis alignment and fitting instructions. Including it is a judgement call, because a measurement-accuracy limit is close to the test-procedure content that is meant to be excluded.",
+  "_pass": "split"
+ },
+ {
+  "text": "If only one of the calculated upper or lower limits of variation of the dipped-beam inclination is exceeded, the manufacturer shall be permitted to choose a different value for the stated initial inclination, provided it remains within the limits specified for approval.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 112,
+   "paragraph": "5.5.5"
+  },
+  "verbatim_quote": "If only one of the calculated upper or lower limits of variation is exceeded, the manufacturer shall be permitted to choose a different value for the stated initial inclination, within the limits specified for approval.",
+  "why_distinct": "Neither existing requirement covers this. Both concern logos, which this paragraph does not mention. This sentence sets a distinct condition: only one variation limit is exceeded, and the new initial inclination must stay within the approval limits.",
+  "_pass": "split"
+ },
+ {
+  "text": "When a front position lamp is reciprocally incorporated with one or more other function(s) which can be switched ON together with it, the colour requirements of each of these other functions shall be fulfilled when the reciprocally incorporated function(s) and the front position lamp are switched ON.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 20,
+   "paragraph": "5.7.1.1"
+  },
+  "verbatim_quote": "However, when a front or rear position lamp is reciprocally incorporated with one or more other function(s) which can be switched ON together with them, the requirements regarding colour of each of these other functions shall be fulfilled when the reciprocally incorporated function(s) and the front or rear position lamps are switched ON.",
+  "why_distinct": "R-0256 covers only the rear position lamp; the paragraph also imposes the same colour obligation on functions reciprocally incorporated with a front position lamp, which is a separate lamp category and test condition.",
+  "_pass": "split"
+ },
+ {
+  "text": "Option (a): For a single lamp as defined in paragraph 2.14.11.1.(a) whose apparent surface is composed of two or more distinct parts, the total area of the projection of the distinct parts of the apparent surface in the direction of the reference axis, on a plane tangent to the exterior surface of the outer lens and perpendicular to the reference axis, shall occupy not less than 60 per cent of the smallest quadrilateral circumscribing that projection. This requirement does not apply to a single retro-reflector.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 20,
+   "paragraph": "5.7.2.1"
+  },
+  "verbatim_quote": "(a) Either the total area of the projection of the distinct parts of the apparent surface in the direction of the reference axis on a plane tangent to the exterior surface of the outer lens and perpendicular to the reference axis shall occupy not less than 60 per cent of the smallest quadrilateral circumscribing the projection of the said apparent surface in the direction of the reference axis",
+  "why_distinct": "List item (a) is a distinct test condition (an area ratio of at least 60 per cent of the circumscribing quadrilateral). The existing requirement bundles it with item (b).",
+  "_pass": "split"
+ },
+ {
+  "text": "Option (b): For a single lamp as defined in paragraph 2.14.11.1.(a) whose apparent surface is composed of two or more distinct parts, the minimum distance between the facing edges of two adjacent/tangential distinct parts of the apparent surface in the direction of the reference axis shall not exceed 75 mm, measured perpendicularly to the reference axis. This requirement does not apply to a single retro-reflector.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 20,
+   "paragraph": "5.7.2.1"
+  },
+  "verbatim_quote": "(b) The minimum distance between the facing edges of two adjacent/tangential distinct parts of the apparent surface in the direction of the reference axis shall not exceed 75 mm when measured perpendicularly to the reference axis.",
+  "why_distinct": "List item (b) is a separate test condition (a maximum edge-to-edge distance of 75 mm). The existing requirement bundles it with item (a).",
+  "_pass": "split"
+ },
+ {
+  "text": "Single lamps composed of two independent retro reflectors (paragraph 2.4.11.1. (b) or (c)) shall be installed such that either the projection of the apparent surfaces of the two retro reflectors in the direction of the reference axis occupies not less than 60 per cent of the smallest quadrilateral circumscribing those projections, or the minimum distance between the facing edges of the apparent surfaces of the two independent retro reflectors does not exceed 75 mm when measured perpendicularly to the reference axis.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 20,
+   "paragraph": "5.7.2.2"
+  },
+  "verbatim_quote": "composed of two lamps marked \"D\" or two independent retro reflectors, shall be installed in such a way that",
+  "why_distinct": "R-0258 covers only assemblies of two lamps marked 'D'. The paragraph applies the same installation obligation separately to single lamps made of two independent retro reflectors, a different device category that has no requirement of its own.",
+  "_pass": "split"
+ },
+ {
+  "text": "Single lamps as defined in paragraph 2.4.11.1., subparagraph (d) shall fulfil the requirements of paragraph 5.7.2.1.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 20,
+   "paragraph": "5.7.2.3"
+  },
+  "verbatim_quote": "Single lamps as defined in paragraph 2.4.11.1., subparagraph (d) shall fulfil the requirements of paragraph 5.7.2.1.",
+  "why_distinct": "The existing requirement covers interdependent lamp systems marked 'Y'. This one applies to a different device category, single lamps per 2.4.11.1.(d), and is not expressed by R-0259.",
+  "_pass": "split"
+ },
+ {
+  "text": "The photometric characteristics of any lamp may vary in relation to the ambient light, provided that any such variation complies with the technical provisions for the lamp concerned.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 21,
+   "paragraph": "5.9.2"
+  },
+  "verbatim_quote": "(a) In relation to the ambient light;",
+  "why_distinct": "List item (a) is a distinct permitted variation condition (ambient light). R-0261 bundles all three items without a dedicated requirement for this one.",
+  "_pass": "split"
+ },
+ {
+  "text": "The photometric characteristics of any lamp may vary as a consequence of other lamps being switched ON or OFF, provided that any such variation complies with the technical provisions for the lamp concerned.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 21,
+   "paragraph": "5.9.2"
+  },
+  "verbatim_quote": "(b) As a consequence of other lamps being switched ON or OFF;",
+  "why_distinct": "List item (b) is a distinct permitted variation condition (other lamps switched ON/OFF). R-0261 bundles it with the other items.",
+  "_pass": "split"
+ },
+ {
+  "text": "The photometric characteristics of any lamp may vary when the lamp is being used to provide another lighting function, provided that any such variation complies with the technical provisions for the lamp concerned.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 21,
+   "paragraph": "5.9.2"
+  },
+  "verbatim_quote": "(c) When the lamp is being used to provide another lighting function;",
+  "why_distinct": "List item (c) is a distinct permitted variation condition (use for another lighting function). R-0261 bundles it with the other items.",
+  "_pass": "split"
+ },
+ {
+  "text": "For vehicles of categories other than M1 and N1, the distance between the inner edges of the two apparent surfaces of the rear position lamps in the direction of the reference axes shall be not less than 600 mm.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 50,
+   "paragraph": "6.10.4.1"
+  },
+  "verbatim_quote": "For all other categories of vehicles: be not less than 600 mm.",
+  "why_distinct": "This is a separate lateral-separation requirement between the two lamps' inner edges, applying only to categories other than M1/N1. R-0307 covers only the outer-edge 400 mm limit.",
+  "_pass": "split"
+ },
+ {
+  "text": "For vehicles of categories other than M1 and N1 whose overall width is less than 1,300 mm, the distance between the inner edges of the two apparent surfaces in the direction of the reference axes may be reduced to not less than 400 mm.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 50,
+   "paragraph": "6.10.4.1"
+  },
+  "verbatim_quote": "This distance may be reduced to 400 mm where the overall width of the vehicle is less than 1,300 mm.",
+  "why_distinct": "This is a different pass/fail limit (400 mm instead of 600 mm) for a distinct vehicle-width condition, so it is a separate test condition.",
+  "_pass": "split"
+ },
+ {
+  "text": "The vertical angle of geometric visibility of the rear position lamp shall be 15° above and below the horizontal.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 50,
+   "paragraph": "6.10.5.1"
+  },
+  "verbatim_quote": "Vertical angle: 15° above and below the horizontal.",
+  "why_distinct": "Vertical direction is a separate requirement from the horizontal angle under the direction rule; R-0310 bundles both directions.",
+  "_pass": "split"
+ },
+ {
+  "text": "Where a rear position lamp is mounted below 750 mm (measured according to paragraph 5.8.1.), the downward vertical angle of 15° may be reduced to 5°.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 50,
+   "paragraph": "6.10.5.1"
+  },
+  "verbatim_quote": "(a) Where a lamp is mounted below 750 mm (measured according to the provisions of paragraph 5.8.1. above), the downward angle of 15° may be reduced to 5°;",
+  "why_distinct": "Lettered list item (a) is a distinct condition and is bundled into R-0310 rather than stated on its own.",
+  "_pass": "split"
+ },
+ {
+  "text": "Where an optional rear position lamp is mounted above 2,100 mm (measured according to paragraph 5.8.1.), the upward vertical angle of 15° may be reduced to 5°.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 50,
+   "paragraph": "6.10.5.1"
+  },
+  "verbatim_quote": "(b) Where an optional lamp is mounted above 2,100 mm (measured according to the provisions of paragraph 5.8.1. above) the upward angle of 15° may be reduced to 5°.",
+  "why_distinct": "Lettered list item (b) is not covered at all by R-0310, which omits the upward-angle reduction for optional lamps mounted above 2,100 mm.",
+  "_pass": "split"
+ },
+ {
+  "text": "For M1 and N1 category vehicles using the alternative visibility of paragraph 6.10.5.2 (only if a rear side-marker lamp is installed), the rear position lamp shall have a vertical geometric visibility of 15° above and below the horizontal; where the lamp is mounted below 750 mm (measured according to paragraph 5.8.1.), the downward angle of 15° may be reduced to 5°.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 51,
+   "paragraph": "6.10.5.2"
+  },
+  "verbatim_quote": "Vertical angle: 15° above and below the horizontal. However, where a lamp is mounted below 750 mm (measured according to the provisions of paragraph 5.8.1. above), the downward angle of 15° may be reduced to 5°.",
+  "why_distinct": "R-0311 bundles the horizontal and vertical visibility angles into one requirement. Under the direction rule, the vertical angle and its 750 mm downward-angle reduction are a separate test condition.",
+  "_pass": "split"
+ },
+ {
+  "text": "For N1 vehicles, the point on the apparent surface of the S1 or S2 stop lamp in the direction of the reference axis which is farthest from the vehicle's median longitudinal plane shall not be more than 400 mm from the extreme outer edge of the vehicle.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 46,
+   "paragraph": "6.7.4.1"
+  },
+  "verbatim_quote": "For M1 and N1 category vehicles: For S1 or S2 categories devices that point on the apparent surface in the direction of the reference axis which is farthest from the vehicle's median longitudinal plane shall not be more than 400 mm from the extreme outer edge of the vehicle",
+  "why_distinct": "The existing requirement covers only M1; the N1 vehicle category variant is not expressed.",
+  "_pass": "split"
+ },
+ {
+  "text": "For vehicle categories other than M1 and N1, the distance between the inner edges of the apparent surfaces of S1 or S2 stop lamps in the direction of the reference axes shall be not less than 600 mm.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 46,
+   "paragraph": "6.7.4.1"
+  },
+  "verbatim_quote": "For all other categories of vehicles: For S1 or S2 categories devices the distance in between the inner edges of the apparent surfaces in the direction of the reference axes shall be not less than 600 mm.",
+  "why_distinct": "A different vehicle category with a different criterion (minimum inner-edge separation).",
+  "_pass": "split"
+ },
+ {
+  "text": "For vehicle categories other than M1 and N1 with an overall width of less than 1,300 mm, the distance between the inner edges of the apparent surfaces of S1 or S2 stop lamps may be reduced to not less than 400 mm.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 46,
+   "paragraph": "6.7.4.1"
+  },
+  "verbatim_quote": "This distance may be reduced to 400 mm if the overall width of the vehicle is less than 1,300 mm.",
+  "why_distinct": "A distinct condition (narrow vehicles) with a different numerical limit.",
+  "_pass": "split"
+ },
+ {
+  "text": "For S3 or S4 category stop lamps, the centre of reference shall be situated on the median longitudinal plane of the vehicle.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 46,
+   "paragraph": "6.7.4.1"
+  },
+  "verbatim_quote": "For S3 or S4 category devices: the centre of reference shall be situated on the median longitudinal plane of the vehicle.",
+  "why_distinct": "A different device category with its own positional requirement.",
+  "_pass": "split"
+ },
+ {
+  "text": "Where two S3 or S4 category devices are installed according to paragraph 6.7.2., they shall be positioned as close as possible to the median longitudinal plane, one on each side of this plane.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 46,
+   "paragraph": "6.7.4.1"
+  },
+  "verbatim_quote": "However, in the case where the two devices of the S3 or S4 category are installed, according to paragraph 6.7.2., they shall be positioned as close as possible to the median longitudinal plane, one on each side of this plane.",
+  "why_distinct": "A distinct condition for the two-device S3/S4 installation case.",
+  "_pass": "split"
+ },
+ {
+  "text": "Where one S3 or S4 category lamp offset from the median longitudinal plane is permitted according to paragraph 6.7.2., the offset shall not exceed 150 mm from the median longitudinal plane to the centre of reference of the lamp.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 46,
+   "paragraph": "6.7.4.1"
+  },
+  "verbatim_quote": "In the case where one S3 or S4 category lamp offset from the median longitudinal plane is permitted according to paragraph 6.7.2., this offset shall not exceed 150 mm from the median longitudinal plane to the centre of reference of the lamp.",
+  "why_distinct": "A distinct condition for an offset single S3/S4 lamp, with a specific 150 mm limit.",
+  "_pass": "split"
+ },
+ {
+  "text": "Stop lamps of category S3 or S4 shall have a horizontal geometric visibility angle of 10° to the left and to the right of the longitudinal axis of the vehicle.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 46,
+   "paragraph": "6.7.5"
+  },
+  "verbatim_quote": "For S3 or S4 categories devices: 10° to the left and to the right of the longitudinal axis of the vehicle",
+  "why_distinct": "Different device category (S3/S4) with a different horizontal angle; the existing requirement covers only S1/S2.",
+  "_pass": "split"
+ },
+ {
+  "text": "Stop lamps of category S3 or S4 shall have a vertical geometric visibility angle of 10° above and 5° below the horizontal.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 46,
+   "paragraph": "6.7.5"
+  },
+  "verbatim_quote": "For S3 or S4 categories devices: 10° above and 5° below the horizontal.",
+  "why_distinct": "Vertical direction for the S3/S4 category, with different pass/fail angles; not covered by the existing requirement.",
+  "_pass": "split"
+ },
+ {
+  "text": "For S1 or S2 stop lamps, where an optional lamp is mounted above 2,100 mm (measured according to paragraph 5.8.1.), the upward vertical visibility angle of 15° may be reduced to 5°.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 46,
+   "paragraph": "6.7.5"
+  },
+  "verbatim_quote": "(b) Where an optional lamp is mounted above 2,100 mm (measured according to the provisions of paragraph 5.8.1. above) the upward angle of 15° may be reduced to 5°.",
+  "why_distinct": "Lettered list item (b), a distinct mounting-height condition and relaxation; it is absent from the existing requirement.",
+  "_pass": "split"
+ },
+ {
+  "text": "Stop lamps of category S1 or S2 shall have a vertical geometric visibility angle of 15° above and below the horizontal; where the lamp is mounted below 750 mm, the downward angle may be reduced to 5°.",
+  "source": {
+   "regulation": "UN R48",
+   "version": "9.3.0",
+   "page": 46,
+   "paragraph": "6.7.5"
+  },
+  "verbatim_quote": "Vertical angle: For S1 or S2 categories devices: 15° above and below the horizontal. However, (a) Where a lamp is mounted below 750 mm (measured according to the provisions of paragraph 5.8.1. above), the downward angle of 15° may be reduced to 5°",
+  "why_distinct": "Under the direction rule, the vertical requirement for S1/S2 (with list item (a)) is separate from the horizontal requirement, which the existing requirement bundles together.",
+  "_pass": "split"
+ }
+]
