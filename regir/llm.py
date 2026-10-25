@@ -44,19 +44,22 @@ def parse_json(text: str):
 def call(system: str, user: str, model: str = BULK, max_tokens: int = 4000, temperature: float = 0.0,
          fake=None, refresh: bool = False) -> str:
     """One cached call. `fake` (callable(system,user)->str) replaces the API in tests."""
+    # Test doubles must be isolated from the persistent production cache.  In
+    # particular, two tests may intentionally return different replies for the
+    # same prompt in order to exercise validation and failure paths.
+    if fake is not None:
+        return fake(system, user)
     key = hashlib.sha256(json.dumps([model, system, user, max_tokens, temperature]).encode()).hexdigest()
     f = CACHE / f"{key}.txt"
     if f.exists() and not refresh: return f.read_text()
-    if fake is not None: out = fake(system, user)
-    else:
-        for attempt in range(5):
-            try:
-                r = client().messages.create(model=model, max_tokens=max_tokens,
-                                             system=system, messages=[{"role": "user", "content": user}])
-                out = "".join(b.text for b in r.content if getattr(b, "type", "") == "text"); break
-            except Exception as e:  # rate limit / overload: back off
-                if attempt == 4: raise
-                time.sleep(2 ** attempt)
+    for attempt in range(5):
+        try:
+            r = client().messages.create(model=model, max_tokens=max_tokens,
+                                         system=system, messages=[{"role": "user", "content": user}])
+            out = "".join(b.text for b in r.content if getattr(b, "type", "") == "text"); break
+        except Exception as e:  # rate limit / overload: back off
+            if attempt == 4: raise
+            time.sleep(2 ** attempt)
     f.write_text(out); return out
 
 
